@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>GPS Real-time Logging</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- OpenStreetMap + Leaflet.js version -->
+<link rel="stylesheet" href="leaflet/leaflet.css" />
+<script src="leaflet/leaflet.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+<div id="container">
+  <div id="header"> <a href="index.html">GPS Real-time Logging</a> </div>
+  <div id="menu"> <a href="index.html">HOME</a>&nbsp; &nbsp; &nbsp; &nbsp;<a href="viewer.html">VIEWER</a></div>
+  <div id="sidebar">
+    <h1>Panel</h1>
+	<p id = "status">Status: <br></br>Not Receiving</p>
+	<div id = "map-selector" style="width: 80px; height: 80px">
+	<form>
+		<select name="maps" id="selected-map">
+		<option value="eastdr">eastdr.kml</option>
+		</select><br></br>
+	</form>
+			<button onclick="changeMapLayer(document.getElementById('selected-map').options[document.getElementById('selected-map').selectedIndex].value)">Load Map</button>
+
+	</div>
+  </div>
+  <div id="main">
+    <h2>This is an interactive map that logs the GPS tracker's position.</h2><br></br>
+	
+	<div id="openstreetmap" style="width: 800px; height: 480px">
+    <div id="interlude" style="text-align: center; line-height: 600px; font-weight: bold; border: 1px dotted grey; background-color: #eee;">
+        Map currently unavailable.
+    </div>
+	</div>
+
+	<div id="chart_div" style="width: 800px; height: 480px">
+	</div>
+	<div id="form-div" style = "width : 800px; height : 480px">
+	<table id="table">
+  <tr>
+    <th>Lap Number</th>
+    <th>Waypoint 1</th>
+    <th>+/-</th>
+	<th>Waypoint 2</th>
+    <th>+/-</th>
+	<th>Waypoint 3</th>
+    <th>+/-</th>
+	<th>Final</th>
+    <th>+/-</th>
+  </tr>
+	</table>
+	</div>
+  </div>
+  <div id="footer"> Final Year Project <span class="separator">|</span> Design by Haoran Qi </div>
+</div>
+
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="leaflet-plugins/layer/vector/KML.js"></script>
+<script>
+//var gmap, gmarker;
+var osmap, osmarker;
+var kmlLayer;
+var waypt1="<td>-</td><td>-</td>",waypt2="<td>-</td><td>-</td>",waypt3="<td>-</td><td>-</td>",finish="<td>-</td><td>-</td>";
+var latlng = new Array(L.latLng(0,0),L.latLng(0,0),L.latLng(0,0),L.latLng(0,0),L.latLng(0,0));
+var latlngArray = new Array();
+var msgFlag = 0;
+var dataFlag = 0;
+var spd = new Array();
+var alt = new Array();
+var table_html = "<tr><th>Lap Number</th><th>Waypoint 1</th><th>+/-</th><th>Waypoint 2</th><th>+/-</th><th>Waypoint 3</th><th>+/-</th><th>Final</th><th>+/-</th></tr>";
+var table_html_tmp;
+var ctrLayer;
+/*
+function createGMap() {
+    var latlng = new google.maps.LatLng(lat, lon);
+    var myOptions = {
+        zoom: 12,
+        center: latlng,
+        mapTypeControl: false,
+        navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    gmap = new google.maps.Map(document.getElementById("googlemap"), myOptions);
+    gmarker = new google.maps.Marker({
+          position: latlng,
+          map: gmap,
+          title:"I'm here"
+    });
+    google.maps.event.addListener(gmarker, "click", function(e) {
+        alert("GPS coordinates:\nLatitude: " + gmarker.getPosition().lat() + "\nLongitude: " + gmarker.getPosition().lng());
+    });
+}
+*/
+function changeMapLayer(newMap)
+	{
+		if (osmap.hasLayer(kmlLayer))
+			{
+				osmap.removeLayer(kmlLayer);
+				osmap.removeControl(ctrLayer);
+			}
+		kmlLayer =  new L.KML("https://raw.githubusercontent.com/qhr1993/GPSLogger/master/eastdr.kml", {async: true});
+        kmlLayer.on("loaded", function(e) {osmap.fitBounds(e.target.getBounds());});
+		
+		osmap.addLayer(kmlLayer);
+		ctrLayer = new L.Control.Layers({}, {'Test':kmlLayer});
+		osmap.addControl(ctrLayer);
+	}
+
+function createOSMap() {
+    osmap = L.map('openstreetmap');
+    var tLayer = new L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+			});
+    osmarker = L.polyline(latlngArray,{color: 'green'});
+    osmarker.addTo(osmap);
+		
+		kmlLayer =  new L.KML("https://raw.githubusercontent.com/qhr1993/GPSLogger/master/eastdr.kml", {async: true});
+         kmlLayer.on("loaded", function(e) {osmap.fitBounds(e.target.getBounds());});
+		 osmap.addLayer(tLayer);
+		 osmap.addLayer(kmlLayer);
+         
+		 ctrLayer = new L.Control.Layers({}, {'Test':kmlLayer});
+		 osmap.addControl(ctrLayer);
+		 osmap.addControl(new L.Control.Layers({}, {'Tile':tLayer}));
+}
+
+
+
+/*
+function updateGMap() {
+    var latlng = new google.maps.LatLng(lat, lon);
+    gmarker.setPosition(latlng);
+    gmap.panTo(latlng);
+}
+*/
+function updateOSMap() {
+    osmarker.addLatLng(latlng[0]);
+	osmarker.addLatLng(latlng[1]);
+    osmarker.addLatLng(latlng[2]);
+	osmarker.addLatLng(latlng[3]);
+	osmarker.addLatLng(latlng[4]);
+}
+function doRefresh() {
+    var xhr;
+    try {
+        xhr = new XMLHttpRequest();
+    } catch (e) {
+        xhr = false;
+    }
+    xhr.onreadystatechange  = function() {
+        if (xhr.readyState  == 4) {
+            if (xhr.status  == 200) {
+                var param = xhr.responseText.split('_');
+				if ((param[0]==="coord") &&  (msgFlag!=parseInt(param[21]))) && (dataFlag)
+				{
+                latlng[4] =L.latLng(param[18],param[17]);
+				latlng[3] =L.latLng(param[14],param[13]);
+                latlng[2] =L.latLng(param[10],param[9]);
+                latlng[1] =L.latLng(param[6],param[5]);
+                latlng[0] =L.latLng(param[2],param[1]);
+				spd.push(parseFloat(param[4]),parseFloat(param[8]),parseFloat(param[12]),parseFloat(param[16]),parseFloat(param[20]));
+				alt.push(parseFloat(param[3]),parseFloat(param[7]),parseFloat(param[11]),parseFloat(param[15]),parseFloat(param[19]));
+				msgFlag = parseInt(param[21]);
+                if ((latlng[0].lat) && (latlng[0].lon)) {
+                    if (!osmap) {
+                        createOSMap();
+                    } else {
+                        updateOSMap();
+                    }
+						
+				google.charts.setOnLoadCallback(drawChart);
+
+                }
+				}
+				else if ((param[0]==="waypt") &&  (msgFlag!=parseInt(param[21]))) && (dataFlag)
+				{
+					switch(parseInt(param[1]))	
+					{
+						case 1: if (parseFloat(param[3])>0)
+								waypt1 = "<td>".param[2]+"</td>"+"<td id='red'>"+param[3]+"</td>"; 
+								else
+								waypt1 = "<td>"+param[2]+"</td>"+"<td id='green'>"+param[3]+"</td>"; 
+						break;
+						case 2: if (parseFloat(param[3])>0)
+								waypt2 = "<td>"+param[2]+"</td>"+"<td id='red'>"+param[3]+"</td>"; 
+								else
+								waypt2 = "<td>"+param[2]+"</td>"+"<td id='green'>"+param[3]+"</td>"; 
+						break;
+						case 3: if (parseFloat(param[3])>0)
+								waypt3 = "<td>"+param[2]+"</td>"+"<td id='red'>"+param[3]+"</td>"; 
+								else
+								waypt3 = "<td>"+param[2]+"</td>"+"<td id='green'>"+param[3]+"</td>"; 
+						break;
+					}
+					table_html_tmp = "<tr><td>current</td>"+waypt1+waypt2+waypt3+finish+"</tr>";
+					document.getElementById("table").innerHTML = table_html + table_html_tmp;
+                }
+				
+				else if ((param[0]==="finish") &&  (msgFlag!=parseInt(param[21]))) && (dataFlag)
+				{
+					
+					if (parseFloat(param[3])>0)
+								finish = "<td>"+param[2]+"</td>"+"<td id='red'>"+param[3]+"</td>"; 
+					else
+								finish = "<td>"+param[2]+"</td>"+"<td id='green'>"+param[3]+"</td>"; 
+					if (parseInt(param[1])!=0)	{	table_html_tmp = "<tr><tb>"+param[1]+"</tb>"+waypt1+waypt2+waypt3+finish+"</tr>";}
+					table_html = table_html + table_html_tmp;
+					document.getElementById("table").innerHTML = table_html;
+					table_html_tmp = "";
+					waypt1="<td>-</td><td>-</td>";
+					waypt2="<td>-</td><td>-</td>";
+					waypt3="<td>-</td><td>-</td>";
+					finish="<td>-</td><td>-</td>";         
+					spd.splice(0, spd.length);
+					alt.splice(0, alt.length);
+				}
+				
+				else if ((param[0]==="init") &&  (msgFlag!=parseInt(param[21])))
+				{
+					document.getElementById("status").innerHTML = "Status: <br></br>Receiving";
+					dataFlag  = 1;
+					spd.splice(0, spd.length);
+					alt.splice(0, alt.length);
+				}
+				
+				else if ((param[0]==="quit") &&  (msgFlag!=parseInt(param[21])))
+				{
+					document.getElementById("status").innerHTML = "Status: <br></br>Not Receiving";
+					dataFlag = 0;
+					spd.splice(0, spd.length);
+					alt.splice(0, alt.length);
+				}
+				
+				/*
+				elseif ((param[0]==="coord") &&  (msgFlag!=parseInt(param[21])))
+				{
+                lon = param[17];
+                lat = param[18];
+				spd.push(parseFloat(param[4]),parseFloat(param[8]),parseFloat(param[12]),parseFloat(param[16]),parseFloat(param[20]));
+				alt.push(parseFloat(param[3]),parseFloat(param[7]),parseFloat(param[11]),parseFloat(param[15]),parseFloat(param[19]));
+				msgFlag = parseInt(param[21]);
+                if (lat && lon) {
+                    if (!osmap) {
+                        createOSMap();
+                    } else {
+                        updateOSMap();
+                    }
+						
+				google.charts.setOnLoadCallback(drawChart);
+
+                }
+				} */
+				
+            }
+        }
+    };
+    xhr.open("GET", "i-am-here.php?" + Math.random(),  true);
+    xhr.send(null);
+    setTimeout('doRefresh()', 2000);
+}
+createOSMap();
+doRefresh();
+
+	google.charts.load('current', {'packages':['line', 'corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+      //var button = document.getElementById('change-chart');
+      var chartDiv = document.getElementById('chart_div');
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'Points');
+      data.addColumn('number', "Speed");
+      data.addColumn('number', "Altitude");
+	  
+	  var tick = new Array();
+
+	  for(var i=0;i<spd.length;i++)
+	  {
+		data.addRow([i+1,spd[i],alt[i]]);
+		tick.push(i+1);
+	  }
+
+
+      /*var materialOptions = {
+        chart: {
+          title: 'Average Temperatures and Daylight in Iceland Throughout the Year'
+        },
+        width: 900,
+        height: 500,
+        series: {
+          // Gives each series an axis name that matches the Y-axis below.
+          0: {axis: 'Temps'},
+          1: {axis: 'Daylight'}
+        },
+        axes: {
+          // Adds labels to each axis; they don't have to match the axis names.
+          y: {
+            Temps: {label: 'Temps (Celsius)'},
+            Daylight: {label: 'Daylight'}
+          }
+        }
+      };*/
+
+      var classicOptions = {
+        title: 'Speed and Altitude Chart',
+        width: 800,
+        height: 480,
+        // Gives each series an axis that matches the vAxes number below.
+        series: {
+          0: {targetAxisIndex: 0},
+          1: {targetAxisIndex: 1}
+        },
+        vAxes: {
+          // Adds titles to each axis.
+          0: {title: 'Speed (km/h)'},
+          1: {title: 'Altitude (m)'}
+        },
+        hAxis: {
+          ticks: tick
+        },
+        
+      };
+
+      /*function drawMaterialChart() {
+        var materialChart = new google.charts.Line(chartDiv);
+        materialChart.draw(data, materialOptions);
+        button.innerText = 'Change to Classic';
+        button.onclick = drawClassicChart;
+      }*/
+
+      function drawClassicChart() {
+        var classicChart = new google.visualization.LineChart(chartDiv);
+        classicChart.draw(data, classicOptions);
+        //button.innerText = 'Change to Material';
+        //button.onclick = drawMaterialChart;
+      }
+
+      drawClassicChart();
+
+    }
+</script>
+
+</body>
+</html>

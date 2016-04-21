@@ -1,0 +1,373 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>GPS Real-time Logging</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<!-- OpenStreetMap + Leaflet.js version -->
+<link rel="stylesheet" href="leaflet/leaflet.css" />
+<script src="leaflet/leaflet.js"></script>
+
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+<div id="container">
+  <div id="header"> <a href="index.html">GPS Real-time Logging</a> </div>
+  <div id="menu"> <a href="index.html">HOME</a>&nbsp; &nbsp; &nbsp; &nbsp;<a href="viewer.html">VIEWER</a></div>
+  <div id="sidebar">
+    <h1>Viewer</h1>
+	<br></br>
+	<div id = "folder-selector" style="width: 80px; height: 80px">
+	<form>
+		<select name="maps" id="selected-folder">
+		
+		</select><br></br>
+	</form>
+	<button onclick="getDataFileName(document.getElementById('selected-folder').options[document.getElementById('selected-folder').selectedIndex].value)">Load Dir</button>
+	</div>
+	<div id = "kml-selector" style="width: 80px; height: 80px">
+	<form>
+		<select name="maps" id="selected-kml">
+		
+		</select><br></br>
+	</form>
+	<button onclick="onLoadingData(document.getElementById('selected-kml').options[document.getElementById('selected-kml').selectedIndex].value)">Load KML</button>
+	</div>
+  </div>
+  <div id="main">
+    <h2 id="dbg">KML Viewer</h2>
+	<br></br>
+	<div id="info" style="border: 1px dotted grey; background-color: #DCDCDC;">
+	<pre id="info-view">dfasfasfasfafdafdafd</pre>
+	</div>
+	<div id="openstreetmap" style="width: 800px; height: 480px">
+    <div id="interlude" style="text-align: center; line-height: 600px; font-weight: bold; border: 1px dotted grey; background-color: #eee;">
+        Map currently unavailable.
+    </div>
+	</div>
+
+	<div id="chart_div" style="width: 800px; height: 480px">
+	</div>
+  </div>
+  <div id="footer"> Final Year Project <span class="separator">|</span> Design by Haoran Qi </div>
+</div>
+
+<script src="https://www.gstatic.com/charts/loader.js"></script>
+<script src="leaflet-plugins/layer/vector/KML.js"></script>
+<script>
+//var gmap, gmarker;
+var osmap, osmarker;
+var kmlLayer;
+var waypt1="<td>-</td><td>-</td>",waypt2="<td>-</td><td>-</td>",waypt3="<td>-</td><td>-</td>",finish="<td>-</td><td>-</td>";
+var lat=0, lon=0, ti =0;
+var msgFlag = 0;
+var spd = new Array();
+var alt = new Array();
+var lo = new Array();
+var la = new Array();
+var time = new Array();
+var currentFolder = "";
+var ctrLayer;
+/*
+function createGMap() {
+    var latlng = new google.maps.LatLng(lat, lon);
+    var myOptions = {
+        zoom: 12,
+        center: latlng,
+        mapTypeControl: false,
+        navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    gmap = new google.maps.Map(document.getElementById("googlemap"), myOptions);
+    gmarker = new google.maps.Marker({
+          position: latlng,
+          map: gmap,
+          title:"I'm here"
+    });
+    google.maps.event.addListener(gmarker, "click", function(e) {
+        alert("GPS coordinates:\nLatitude: " + gmarker.getPosition().lat() + "\nLongitude: " + gmarker.getPosition().lng());
+    });
+}
+*/
+function changeMapLayer(newMap)
+	{
+		if (osmap.hasLayer(kmlLayer))
+			{
+				osmap.removeLayer(kmlLayer);
+				osmap.removeControl(ctrLayer);
+			}
+		//kmlLayer =  new L.KML("https://raw.githubusercontent.com/qhr1993/GPSLogger/master/eastdr.kml", {async: true});
+		kmlLayer =  new L.KML("https://raw.githubusercontent.com/qhr1993/GPSLogger/master/eastdr.kml", {async: true});
+        kmlLayer.on("loaded", function(e) {osmap.fitBounds(e.target.getBounds());});
+		
+		osmap.addLayer(kmlLayer);
+		ctrLayer = new L.Control.Layers({}, {'Test':kmlLayer});
+		osmap.addControl(ctrLayer);
+	}
+
+function getGeneralInfo(fileName){
+var xhr;
+var sequence = fileName.split(/[-.]/);
+    try {
+        xhr = new XMLHttpRequest();
+    } catch (e) {
+        xhr = false;
+    }
+	xhr.open("GET","module/getInfo.php?seq="+sequence[1]+"&"+"folder="+currentFolder+"&"+Math.random(),true);
+	xhr.send(null);
+	xhr.onreadystatechange  = function() {
+        if (xhr.readyState  == 4) {
+            if (xhr.status  == 200) {
+	var info = xhr.responseText;
+	document.getElementById("info-view").innerHTML = info;
+	}
+	}
+	}
+}
+
+function getCoord(fileName){
+	la.splice(0, la.length);
+	lo.splice(0, lo.length);alt.splice(0, alt.length);time.splice(0, time.length);
+var xhr;
+    try {
+        xhr = new XMLHttpRequest();
+    } catch (e) {
+        xhr = false;
+    }
+	xhr.open("GET","module/getKmlData.php?file="+fileName+"&"+"folder="+currentFolder+"&"+"type="+"coord"+"&"+Math.random(),true);
+	xhr.send(null);
+	xhr.onreadystatechange  = function() {
+        if (xhr.readyState  == 4) {
+            if (xhr.status  == 200) {
+	var array = xhr.responseText.replace(/<br>/g," ").split(" ");
+	for (var i=0;i<(array.length-1)/4;i++)
+	{
+		la.push(parseFloat(array[4*i+2]));
+		lo.push(parseFloat(array[4*i+1]));
+		alt.push(parseFloat(array[4*i+3]));
+		time.push(array[4*i]);
+	}
+		google.charts.setOnLoadCallback(drawChart);
+
+	}
+	}
+	}
+}
+
+function getSpeed(fileName){
+spd.splice(0, spd.length);
+var xhr;
+    try {
+        xhr = new XMLHttpRequest();
+    } catch (e) {
+        xhr = false;
+    }
+	xhr.open("GET","module/getKmlData.php?file="+fileName+"&"+"folder="+currentFolder+"&"+"type="+"speed"+"&"+Math.random(),true);
+	xhr.send(null);
+	xhr.onreadystatechange  = function() {
+        if (xhr.readyState  == 4) {
+            if (xhr.status  == 200) {
+	var tmp = xhr.responseText.replace(/<br>/g," ").split(" ");
+	for (var i=0;i<tmp.length-1;i++)
+	{
+		spd.push(parseFloat(tmp[i]));
+	}
+		google.charts.setOnLoadCallback(drawChart);
+
+	}
+	}
+	}
+}
+
+
+function createOSMap() {
+    osmap = L.map('openstreetmap');
+	osmap.setView([lat, lon], 12);
+    var tLayer = new L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+			});
+    osmarker = L.marker([lat, lon]);
+    osmarker.addTo(osmap).bindPopup("<p>GPS coordinates :</p><p>" + lat + ", " + lon + "</p>");
+		
+		kmlLayer =  new L.KML("https://raw.githubusercontent.com/qhr1993/GPSLogger/master/eastdr.kml", {async: true});
+         kmlLayer.on("loaded", function(e) {osmap.fitBounds(e.target.getBounds());});
+		 osmap.addLayer(tLayer);
+		 osmap.addLayer(kmlLayer);
+         
+		 ctrLayer = new L.Control.Layers({}, {'Test':kmlLayer});
+		 osmap.addControl(ctrLayer);
+		 osmap.addControl(new L.Control.Layers({}, {'Tile':tLayer}));
+
+}
+
+
+
+
+/*
+function updateGMap() {
+    var latlng = new google.maps.LatLng(lat, lon);
+    gmarker.setPosition(latlng);
+    gmap.panTo(latlng);
+}
+*/
+function updateOSMap() {
+    osmarker.setLatLng([lat, lon]);
+    osmarker.bindPopup("<p>GPS coordinates: " + lat.toString() + ", " + lon.toString() + "<br />Time: "+ ti "</p>");
+    
+}
+
+function onLoadingData(fileName){
+	changeMapLayer(fileName);
+	getGeneralInfo(fileName);
+	getCoord(fileName);
+	getSpeed(fileName);
+}
+
+function getDataFolderName(){
+	var xhr;
+    try {
+        xhr = new XMLHttpRequest();
+    } catch (e) {
+        xhr = false;
+    }
+	xhr.open("GET","module/getFolder.php?"+ Math.random(),true);
+	xhr.send(null);
+	xhr.onreadystatechange  = function() {
+        if (xhr.readyState  == 4) {
+            if (xhr.status  == 200) {
+	var comboBoxElement = xhr.responseText.split("_");
+	var comboBoxHTML = "";
+	for (var i=0;i<(comboBoxElement.length-1);i++)
+	{	
+		comboBoxHTML += '<option value="'+comboBoxElement[i]+'">'+ comboBoxElement[i]+'</option>';
+	}
+	document.getElementById("selected-folder").innerHTML = comboBoxHTML;
+	}
+	}
+	}
+}
+
+function getDataFileName(folderName){
+currentFolder = folderName;
+var xhr;
+    try {
+        xhr = new XMLHttpRequest();
+    } catch (e) {
+        xhr = false;
+    }
+	xhr.open("GET","module/getKml.php?folder="+folderName+"&"+ Math.random(),true);
+	xhr.send(null);
+	xhr.onreadystatechange  = function() {
+        if (xhr.readyState  == 4) {
+            if (xhr.status  == 200) {
+	var comboBoxElement = xhr.responseText.split("_");
+	var comboBoxHTML = "";
+	for (var i=0;i<(comboBoxElement.length-1);i++)
+	{	
+		comboBoxHTML += '<option value="'+comboBoxElement[i]+'">'+ comboBoxElement[i]+'</option>';
+	}
+	document.getElementById("selected-kml").innerHTML = comboBoxHTML;
+	}
+	}
+	}
+}
+    
+createOSMap();
+getDataFolderName();
+
+	google.charts.load('current', {'packages':['line', 'corechart']});
+    //google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+      //var button = document.getElementById('change-chart');
+      var chartDiv = document.getElementById('chart_div');
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('number', 'Points');
+      data.addColumn('number', "Speed");
+      data.addColumn('number', "Altitude");
+	  
+	  var tick = new Array();
+
+	  for(var i=0;i<spd.length;i++)
+	  {
+		data.addRow([i+1,spd[i],alt[i]]);
+		tick.push(i+1);
+	  }
+
+
+      /*var materialOptions = {
+        chart: {
+          title: 'Average Temperatures and Daylight in Iceland Throughout the Year'
+        },
+        width: 900,
+        height: 500,
+        series: {
+          // Gives each series an axis name that matches the Y-axis below.
+          0: {axis: 'Temps'},
+          1: {axis: 'Daylight'}
+        },
+        axes: {
+          // Adds labels to each axis; they don't have to match the axis names.
+          y: {
+            Temps: {label: 'Temps (Celsius)'},
+            Daylight: {label: 'Daylight'}
+          }
+        }
+      };*/
+
+      var classicOptions = {
+        title: 'Speed and Altitude Chart',
+        width: 800,
+        height: 480,
+        // Gives each series an axis that matches the vAxes number below.
+        series: {
+          0: {targetAxisIndex: 0},
+          1: {targetAxisIndex: 1}
+        },
+        vAxes: {
+          // Adds titles to each axis.
+          0: {title: 'Speed (km/h)'},
+          1: {title: 'Altitude (m)'}
+        },
+        hAxis: {
+          ticks: tick
+        },
+        
+      };
+
+      /*function drawMaterialChart() {
+        var materialChart = new google.charts.Line(chartDiv);
+        materialChart.draw(data, materialOptions);
+        button.innerText = 'Change to Classic';
+        button.onclick = drawClassicChart;
+      }*/
+
+      function drawClassicChart() {
+        var classicChart = new google.visualization.LineChart(chartDiv);
+        classicChart.draw(data, classicOptions);
+		function selectHandler()
+		{
+			var selectedItem = chart.getSelection()[0];
+			if (selectedItem)
+			{
+				var index = selectedItem.row;
+				lat = la[index];
+				lon = lo[index];
+				ti = time[index];
+				updateOSMap();
+			}
+		}
+		google.visualization.events.addListener(classicChart, 'select', selectHandler);
+        //button.innerText = 'Change to Material';
+        //button.onclick = drawMaterialChart;
+      }
+
+      drawClassicChart();
+
+    }
+</script>
+
+</body>
+</html>

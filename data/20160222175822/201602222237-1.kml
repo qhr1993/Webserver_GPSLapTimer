@@ -1,0 +1,2378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2"
+xmlns:gx="http://www.google.com/kml/ext/2.2"
+xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+<open>1</open>
+<visibility>1</visibility>
+<name><![CDATA[East Dr]]></name>
+<atom:author><atom:name><![CDATA[Created by Google My Tracks on Android]]></atom:name></atom:author>
+<Style id="track">
+<LineStyle><color>7f0000ff</color><width>4</width></LineStyle>
+<IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://earth.google.com/images/kml-icons/track-directional/track-0.png</href></Icon>
+</IconStyle>
+</Style>
+<Style id="start"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/grn-circle.png</href></Icon>
+<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Style id="end"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href></Icon>
+<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Style id="statistics"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href></Icon>
+<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Style id="waypoint"><IconStyle>
+<scale>1.3</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/pushpin/blue-pushpin.png</href></Icon>
+<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+</IconStyle></Style>
+<Schema id="schema">
+<gx:SimpleArrayField name="power" type="int">
+<displayName><![CDATA[Power (W)]]></displayName>
+</gx:SimpleArrayField>
+<gx:SimpleArrayField name="cadence" type="int">
+<displayName><![CDATA[Cadence (rpm)]]></displayName>
+</gx:SimpleArrayField>
+<gx:SimpleArrayField name="heart_rate" type="int">
+<displayName><![CDATA[Heart rate (bpm)]]></displayName>
+</gx:SimpleArrayField>
+</Schema>
+<Folder><name><![CDATA[East Dr Markers]]></name>
+<open>1</open>
+<Placemark>
+<name><![CDATA[Marker 1]]></name>
+<description><![CDATA[]]></description>
+<TimeStamp><when>2016-01-13T15:51:17.526Z</when></TimeStamp>
+<styleUrl>#waypoint</styleUrl>
+<Point>
+<coordinates>-1.194616,52.935469,74.0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Marker 2]]></name>
+<description><![CDATA[]]></description>
+<TimeStamp><when>2016-01-13T16:01:10.880Z</when></TimeStamp>
+<styleUrl>#waypoint</styleUrl>
+<Point>
+<coordinates>-1.201076,52.939561,107.0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name><![CDATA[Marker 3]]></name>
+<description><![CDATA[]]></description>
+<TimeStamp><when>2016-01-13T16:08:39.883Z</when></TimeStamp>
+<styleUrl>#waypoint</styleUrl>
+<Point>
+<coordinates>-1.194355,52.938965,97.0</coordinates>
+</Point>
+</Placemark>
+</Folder>
+<Placemark>
+<name><![CDATA[East Dr (Start)]]></name>
+<description><![CDATA[]]></description>
+<TimeStamp><when>2016-01-13T15:43:42.947Z</when></TimeStamp>
+<styleUrl>#start</styleUrl>
+<Point>
+<coordinates>-1.190969,52.939194,92.0</coordinates>
+</Point>
+</Placemark>
+<Placemark id="tour">
+<name><![CDATA[East Dr]]></name>
+<description><![CDATA[]]></description>
+<styleUrl>#track</styleUrl>
+<gx:MultiTrack>
+<altitudeMode>absolute</altitudeMode>
+<gx:interpolate>1</gx:interpolate>
+<gx:Track>
+<when>2016-01-13T15:43:42.947Z</when>
+<gx:coord>-1.190969 52.939194 92.0</gx:coord>
+<when>2016-01-13T15:43:53.556Z</when>
+<gx:coord>-1.190961 52.939115 82.0</gx:coord>
+<when>2016-01-13T15:43:54.524Z</when>
+<gx:coord>-1.190934 52.939103 81.0</gx:coord>
+<when>2016-01-13T15:44:00.545Z</when>
+<gx:coord>-1.190886 52.93903 75.0</gx:coord>
+<when>2016-01-13T15:44:01.531Z</when>
+<gx:coord>-1.190885 52.939016 74.0</gx:coord>
+<when>2016-01-13T15:44:08.567Z</when>
+<gx:coord>-1.190842 52.938935 70.0</gx:coord>
+<when>2016-01-13T15:44:09.530Z</when>
+<gx:coord>-1.190832 52.938924 71.0</gx:coord>
+<when>2016-01-13T15:44:15.553Z</when>
+<gx:coord>-1.190763 52.938848 68.0</gx:coord>
+<when>2016-01-13T15:44:16.521Z</when>
+<gx:coord>-1.19075 52.938835 68.0</gx:coord>
+<when>2016-01-13T15:44:22.554Z</when>
+<gx:coord>-1.190683 52.938762 68.0</gx:coord>
+<when>2016-01-13T15:44:23.531Z</when>
+<gx:coord>-1.190672 52.938748 67.0</gx:coord>
+<when>2016-01-13T15:44:29.561Z</when>
+<gx:coord>-1.190609 52.938675 65.0</gx:coord>
+<when>2016-01-13T15:44:30.526Z</when>
+<gx:coord>-1.190597 52.938663 65.0</gx:coord>
+<when>2016-01-13T15:44:38.565Z</when>
+<gx:coord>-1.190533 52.938586 67.0</gx:coord>
+<when>2016-01-13T15:44:39.525Z</when>
+<gx:coord>-1.190524 52.938576 67.0</gx:coord>
+<when>2016-01-13T15:44:45.555Z</when>
+<gx:coord>-1.190451 52.938508 69.0</gx:coord>
+<when>2016-01-13T15:44:46.535Z</when>
+<gx:coord>-1.190438 52.938498 69.0</gx:coord>
+<when>2016-01-13T15:44:55.550Z</when>
+<gx:coord>-1.190348 52.93843 69.0</gx:coord>
+<when>2016-01-13T15:44:56.526Z</when>
+<gx:coord>-1.190338 52.938427 69.0</gx:coord>
+<when>2016-01-13T15:45:02.558Z</when>
+<gx:coord>-1.190286 52.938343 68.0</gx:coord>
+<when>2016-01-13T15:45:03.531Z</when>
+<gx:coord>-1.190268 52.938333 68.0</gx:coord>
+<when>2016-01-13T15:45:08.551Z</when>
+<gx:coord>-1.190202 52.938265 68.0</gx:coord>
+<when>2016-01-13T15:45:09.531Z</when>
+<gx:coord>-1.190187 52.938252 68.0</gx:coord>
+<when>2016-01-13T15:45:15.549Z</when>
+<gx:coord>-1.190085 52.938202 67.0</gx:coord>
+<when>2016-01-13T15:45:16.521Z</when>
+<gx:coord>-1.190064 52.938192 67.0</gx:coord>
+<when>2016-01-13T15:45:22.553Z</when>
+<gx:coord>-1.189982 52.938117 67.0</gx:coord>
+<when>2016-01-13T15:45:23.524Z</when>
+<gx:coord>-1.189969 52.938105 68.0</gx:coord>
+<when>2016-01-13T15:45:29.541Z</when>
+<gx:coord>-1.189893 52.938039 67.0</gx:coord>
+<when>2016-01-13T15:45:30.520Z</when>
+<gx:coord>-1.189884 52.938027 67.0</gx:coord>
+<when>2016-01-13T15:45:36.547Z</when>
+<gx:coord>-1.189847 52.937946 68.0</gx:coord>
+<when>2016-01-13T15:45:37.520Z</when>
+<gx:coord>-1.189839 52.937932 68.0</gx:coord>
+<when>2016-01-13T15:45:43.552Z</when>
+<gx:coord>-1.189795 52.937856 69.0</gx:coord>
+<when>2016-01-13T15:45:44.530Z</when>
+<gx:coord>-1.189788 52.937843 68.0</gx:coord>
+<when>2016-01-13T15:45:50.565Z</when>
+<gx:coord>-1.189786 52.937765 68.0</gx:coord>
+<when>2016-01-13T15:45:51.526Z</when>
+<gx:coord>-1.189787 52.937751 69.0</gx:coord>
+<when>2016-01-13T15:45:57.559Z</when>
+<gx:coord>-1.189798 52.937671 69.0</gx:coord>
+<when>2016-01-13T15:45:58.524Z</when>
+<gx:coord>-1.189799 52.937659 69.0</gx:coord>
+<when>2016-01-13T15:46:05.564Z</when>
+<gx:coord>-1.189831 52.937574 70.0</gx:coord>
+<when>2016-01-13T15:46:06.533Z</when>
+<gx:coord>-1.189831 52.937566 69.0</gx:coord>
+<when>2016-01-13T15:46:13.556Z</when>
+<gx:coord>-1.18987 52.937488 70.0</gx:coord>
+<when>2016-01-13T15:46:14.530Z</when>
+<gx:coord>-1.189878 52.937474 70.0</gx:coord>
+<when>2016-01-13T15:46:21.560Z</when>
+<gx:coord>-1.18993 52.937398 70.0</gx:coord>
+<when>2016-01-13T15:46:22.531Z</when>
+<gx:coord>-1.18994 52.937383 70.0</gx:coord>
+<when>2016-01-13T15:46:29.570Z</when>
+<gx:coord>-1.190022 52.937309 70.0</gx:coord>
+<when>2016-01-13T15:46:30.529Z</when>
+<gx:coord>-1.190039 52.937303 71.0</gx:coord>
+<when>2016-01-13T15:46:36.562Z</when>
+<gx:coord>-1.190153 52.937266 70.0</gx:coord>
+<when>2016-01-13T15:46:37.528Z</when>
+<gx:coord>-1.190174 52.937257 70.0</gx:coord>
+<when>2016-01-13T15:46:43.555Z</when>
+<gx:coord>-1.190303 52.937244 72.0</gx:coord>
+<when>2016-01-13T15:46:44.524Z</when>
+<gx:coord>-1.190324 52.937243 71.0</gx:coord>
+<when>2016-01-13T15:46:51.566Z</when>
+<gx:coord>-1.190468 52.937237 72.0</gx:coord>
+<when>2016-01-13T15:46:52.531Z</when>
+<gx:coord>-1.19049 52.937235 73.0</gx:coord>
+<when>2016-01-13T15:46:59.563Z</when>
+<gx:coord>-1.190633 52.937238 74.0</gx:coord>
+<when>2016-01-13T15:47:00.531Z</when>
+<gx:coord>-1.190657 52.937237 74.0</gx:coord>
+<when>2016-01-13T15:47:06.568Z</when>
+<gx:coord>-1.190802 52.937227 74.0</gx:coord>
+<when>2016-01-13T15:47:07.529Z</when>
+<gx:coord>-1.190825 52.937228 74.0</gx:coord>
+<when>2016-01-13T15:47:13.557Z</when>
+<gx:coord>-1.190961 52.937228 76.0</gx:coord>
+<when>2016-01-13T15:47:14.527Z</when>
+<gx:coord>-1.190984 52.937229 77.0</gx:coord>
+<when>2016-01-13T15:47:20.554Z</when>
+<gx:coord>-1.191105 52.937209 75.0</gx:coord>
+<when>2016-01-13T15:47:21.527Z</when>
+<gx:coord>-1.191125 52.9372 75.0</gx:coord>
+<when>2016-01-13T15:47:27.549Z</when>
+<gx:coord>-1.191252 52.937164 75.0</gx:coord>
+<when>2016-01-13T15:47:28.523Z</when>
+<gx:coord>-1.191273 52.937157 75.0</gx:coord>
+<when>2016-01-13T15:47:34.554Z</when>
+<gx:coord>-1.191404 52.937124 75.0</gx:coord>
+<when>2016-01-13T15:47:35.527Z</when>
+<gx:coord>-1.191426 52.937121 75.0</gx:coord>
+<when>2016-01-13T15:47:41.563Z</when>
+<gx:coord>-1.191545 52.937093 76.0</gx:coord>
+<when>2016-01-13T15:47:42.526Z</when>
+<gx:coord>-1.191564 52.937087 76.0</gx:coord>
+<when>2016-01-13T15:47:48.557Z</when>
+<gx:coord>-1.191688 52.937052 77.0</gx:coord>
+<when>2016-01-13T15:47:49.527Z</when>
+<gx:coord>-1.191709 52.937046 77.0</gx:coord>
+<when>2016-01-13T15:47:56.553Z</when>
+<gx:coord>-1.191835 52.937005 75.0</gx:coord>
+<when>2016-01-13T15:47:57.529Z</when>
+<gx:coord>-1.191855 52.936999 74.0</gx:coord>
+<when>2016-01-13T15:48:03.553Z</when>
+<gx:coord>-1.191978 52.936968 73.0</gx:coord>
+<when>2016-01-13T15:48:04.566Z</when>
+<gx:coord>-1.192 52.936966 72.0</gx:coord>
+<when>2016-01-13T15:48:10.547Z</when>
+<gx:coord>-1.192122 52.936935 72.0</gx:coord>
+<when>2016-01-13T15:48:11.527Z</when>
+<gx:coord>-1.192139 52.936931 72.0</gx:coord>
+<when>2016-01-13T15:48:18.556Z</when>
+<gx:coord>-1.19226 52.936888 73.0</gx:coord>
+<when>2016-01-13T15:48:19.533Z</when>
+<gx:coord>-1.192278 52.936891 74.0</gx:coord>
+<when>2016-01-13T15:48:26.564Z</when>
+<gx:coord>-1.19242 52.93689 73.0</gx:coord>
+<when>2016-01-13T15:48:27.535Z</when>
+<gx:coord>-1.19244 52.936885 73.0</gx:coord>
+<when>2016-01-13T15:48:34.559Z</when>
+<gx:coord>-1.192582 52.936872 75.0</gx:coord>
+<when>2016-01-13T15:48:35.530Z</when>
+<gx:coord>-1.192604 52.936869 75.0</gx:coord>
+<when>2016-01-13T15:48:42.561Z</when>
+<gx:coord>-1.192735 52.936842 76.0</gx:coord>
+<when>2016-01-13T15:48:43.529Z</when>
+<gx:coord>-1.192753 52.936839 76.0</gx:coord>
+<when>2016-01-13T15:48:49.560Z</when>
+<gx:coord>-1.192872 52.9368 75.0</gx:coord>
+<when>2016-01-13T15:48:50.537Z</when>
+<gx:coord>-1.192893 52.936791 74.0</gx:coord>
+<when>2016-01-13T15:48:56.557Z</when>
+<gx:coord>-1.193001 52.936745 74.0</gx:coord>
+<when>2016-01-13T15:48:57.531Z</when>
+<gx:coord>-1.193021 52.936741 75.0</gx:coord>
+<when>2016-01-13T15:49:03.572Z</when>
+<gx:coord>-1.193143 52.936707 74.0</gx:coord>
+<when>2016-01-13T15:49:04.523Z</when>
+<gx:coord>-1.193162 52.936698 74.0</gx:coord>
+<when>2016-01-13T15:49:10.555Z</when>
+<gx:coord>-1.193277 52.936644 72.0</gx:coord>
+<when>2016-01-13T15:49:11.526Z</when>
+<gx:coord>-1.193293 52.936634 72.0</gx:coord>
+<when>2016-01-13T15:49:17.561Z</when>
+<gx:coord>-1.193409 52.936596 73.0</gx:coord>
+<when>2016-01-13T15:49:18.522Z</when>
+<gx:coord>-1.193427 52.93659 73.0</gx:coord>
+<when>2016-01-13T15:49:25.563Z</when>
+<gx:coord>-1.19357 52.936582 76.0</gx:coord>
+<when>2016-01-13T15:49:26.522Z</when>
+<gx:coord>-1.19359 52.936583 77.0</gx:coord>
+<when>2016-01-13T15:49:31.550Z</when>
+<gx:coord>-1.1937 52.936537 73.0</gx:coord>
+<when>2016-01-13T15:49:32.543Z</when>
+<gx:coord>-1.193721 52.936526 73.0</gx:coord>
+<when>2016-01-13T15:49:38.566Z</when>
+<gx:coord>-1.193841 52.936492 73.0</gx:coord>
+<when>2016-01-13T15:49:39.529Z</when>
+<gx:coord>-1.193864 52.936482 72.0</gx:coord>
+<when>2016-01-13T15:49:44.579Z</when>
+<gx:coord>-1.193959 52.93642 71.0</gx:coord>
+<when>2016-01-13T15:49:45.530Z</when>
+<gx:coord>-1.193971 52.936409 70.0</gx:coord>
+<when>2016-01-13T15:49:52.548Z</when>
+<gx:coord>-1.193951 52.936327 71.0</gx:coord>
+<when>2016-01-13T15:49:53.528Z</when>
+<gx:coord>-1.193936 52.936317 72.0</gx:coord>
+<when>2016-01-13T15:50:00.558Z</when>
+<gx:coord>-1.193829 52.93626 73.0</gx:coord>
+<when>2016-01-13T15:50:01.527Z</when>
+<gx:coord>-1.193809 52.936252 73.0</gx:coord>
+<when>2016-01-13T15:50:07.545Z</when>
+<gx:coord>-1.193714 52.936193 74.0</gx:coord>
+<when>2016-01-13T15:50:08.531Z</when>
+<gx:coord>-1.1937 52.936181 74.0</gx:coord>
+<when>2016-01-13T15:50:14.711Z</when>
+<gx:coord>-1.193659 52.936096 75.0</gx:coord>
+<when>2016-01-13T15:50:15.531Z</when>
+<gx:coord>-1.193658 52.93608 75.0</gx:coord>
+<when>2016-01-13T15:50:21.560Z</when>
+<gx:coord>-1.193696 52.935994 73.0</gx:coord>
+<when>2016-01-13T15:50:22.524Z</when>
+<gx:coord>-1.193705 52.935979 73.0</gx:coord>
+<when>2016-01-13T15:50:27.565Z</when>
+<gx:coord>-1.193764 52.93591 71.0</gx:coord>
+<when>2016-01-13T15:50:28.527Z</when>
+<gx:coord>-1.193778 52.935897 71.0</gx:coord>
+<when>2016-01-13T15:50:34.640Z</when>
+<gx:coord>-1.193865 52.935831 71.0</gx:coord>
+<when>2016-01-13T15:50:35.526Z</when>
+<gx:coord>-1.19388 52.935822 71.0</gx:coord>
+<when>2016-01-13T15:50:41.540Z</when>
+<gx:coord>-1.19398 52.935767 71.0</gx:coord>
+<when>2016-01-13T15:50:42.525Z</when>
+<gx:coord>-1.193995 52.935758 72.0</gx:coord>
+<when>2016-01-13T15:50:48.570Z</when>
+<gx:coord>-1.194104 52.935697 73.0</gx:coord>
+<when>2016-01-13T15:50:49.535Z</when>
+<gx:coord>-1.194122 52.935687 73.0</gx:coord>
+<when>2016-01-13T15:50:55.571Z</when>
+<gx:coord>-1.194233 52.93564 72.0</gx:coord>
+<when>2016-01-13T15:50:56.530Z</when>
+<gx:coord>-1.19425 52.935634 72.0</gx:coord>
+<when>2016-01-13T15:51:02.539Z</when>
+<gx:coord>-1.194351 52.935589 72.0</gx:coord>
+<when>2016-01-13T15:51:03.528Z</when>
+<gx:coord>-1.194371 52.935581 72.0</gx:coord>
+<when>2016-01-13T15:51:09.574Z</when>
+<gx:coord>-1.194485 52.935541 73.0</gx:coord>
+<when>2016-01-13T15:51:10.531Z</when>
+<gx:coord>-1.194502 52.935533 73.0</gx:coord>
+<when>2016-01-13T15:51:16.543Z</when>
+<gx:coord>-1.194601 52.935478 74.0</gx:coord>
+<when>2016-01-13T15:51:17.526Z</when>
+<gx:coord>-1.194616 52.935469 74.0</gx:coord>
+<when>2016-01-13T15:51:24.565Z</when>
+<gx:coord>-1.194707 52.935403 76.0</gx:coord>
+<when>2016-01-13T15:51:25.525Z</when>
+<gx:coord>-1.194722 52.935392 76.0</gx:coord>
+<when>2016-01-13T15:51:31.581Z</when>
+<gx:coord>-1.194828 52.935346 75.0</gx:coord>
+<when>2016-01-13T15:51:32.530Z</when>
+<gx:coord>-1.194847 52.935339 75.0</gx:coord>
+<when>2016-01-13T15:51:39.555Z</when>
+<gx:coord>-1.194969 52.935289 73.0</gx:coord>
+<when>2016-01-13T15:51:40.528Z</when>
+<gx:coord>-1.194984 52.935284 73.0</gx:coord>
+<when>2016-01-13T15:51:47.569Z</when>
+<gx:coord>-1.195102 52.93525 72.0</gx:coord>
+<when>2016-01-13T15:51:48.533Z</when>
+<gx:coord>-1.195119 52.935244 72.0</gx:coord>
+<when>2016-01-13T15:51:55.560Z</when>
+<gx:coord>-1.195249 52.935215 72.0</gx:coord>
+<when>2016-01-13T15:51:56.533Z</when>
+<gx:coord>-1.195269 52.935213 72.0</gx:coord>
+<when>2016-01-13T15:52:03.557Z</when>
+<gx:coord>-1.1954 52.935221 71.0</gx:coord>
+<when>2016-01-13T15:52:04.539Z</when>
+<gx:coord>-1.195419 52.935223 72.0</gx:coord>
+<when>2016-01-13T15:52:11.552Z</when>
+<gx:coord>-1.195563 52.93523 71.0</gx:coord>
+<when>2016-01-13T15:52:12.534Z</when>
+<gx:coord>-1.195583 52.935231 71.0</gx:coord>
+<when>2016-01-13T15:52:19.555Z</when>
+<gx:coord>-1.195722 52.935237 71.0</gx:coord>
+<when>2016-01-13T15:52:20.532Z</when>
+<gx:coord>-1.195747 52.935236 71.0</gx:coord>
+<when>2016-01-13T15:52:27.558Z</when>
+<gx:coord>-1.19589 52.935227 71.0</gx:coord>
+<when>2016-01-13T15:52:28.533Z</when>
+<gx:coord>-1.195912 52.935227 71.0</gx:coord>
+<when>2016-01-13T15:52:35.553Z</when>
+<gx:coord>-1.196055 52.935226 74.0</gx:coord>
+<when>2016-01-13T15:52:36.529Z</when>
+<gx:coord>-1.196079 52.935226 74.0</gx:coord>
+<when>2016-01-13T15:52:41.557Z</when>
+<gx:coord>-1.196205 52.935249 74.0</gx:coord>
+<when>2016-01-13T15:52:42.528Z</when>
+<gx:coord>-1.19623 52.935251 74.0</gx:coord>
+<when>2016-01-13T15:52:50.571Z</when>
+<gx:coord>-1.196375 52.935251 73.0</gx:coord>
+<when>2016-01-13T15:52:51.533Z</when>
+<gx:coord>-1.196397 52.93525 73.0</gx:coord>
+<when>2016-01-13T15:52:58.560Z</when>
+<gx:coord>-1.196541 52.935263 72.0</gx:coord>
+<when>2016-01-13T15:52:59.531Z</when>
+<gx:coord>-1.196561 52.935265 73.0</gx:coord>
+<when>2016-01-13T15:53:05.555Z</when>
+<gx:coord>-1.196689 52.935287 73.0</gx:coord>
+<when>2016-01-13T15:53:06.534Z</when>
+<gx:coord>-1.196708 52.935295 74.0</gx:coord>
+<when>2016-01-13T15:53:17.571Z</when>
+<gx:coord>-1.196823 52.93535 77.0</gx:coord>
+<when>2016-01-13T15:53:18.523Z</when>
+<gx:coord>-1.196836 52.935359 77.0</gx:coord>
+<when>2016-01-13T15:53:25.558Z</when>
+<gx:coord>-1.196927 52.93542 75.0</gx:coord>
+<when>2016-01-13T15:53:26.534Z</when>
+<gx:coord>-1.196941 52.935429 77.0</gx:coord>
+<when>2016-01-13T15:53:38.552Z</when>
+<gx:coord>-1.197038 52.935495 75.0</gx:coord>
+<when>2016-01-13T15:53:39.528Z</when>
+<gx:coord>-1.19704 52.9355 75.0</gx:coord>
+<when>2016-01-13T15:53:53.562Z</when>
+<gx:coord>-1.197079 52.935576 81.0</gx:coord>
+<when>2016-01-13T15:53:54.531Z</when>
+<gx:coord>-1.197078 52.935592 82.0</gx:coord>
+<when>2016-01-13T15:54:00.561Z</when>
+<gx:coord>-1.197139 52.935672 85.0</gx:coord>
+<when>2016-01-13T15:54:01.529Z</when>
+<gx:coord>-1.197163 52.935685 86.0</gx:coord>
+<when>2016-01-13T15:54:11.561Z</when>
+<gx:coord>-1.197283 52.935735 82.0</gx:coord>
+<when>2016-01-13T15:54:12.525Z</when>
+<gx:coord>-1.197291 52.935741 80.0</gx:coord>
+<when>2016-01-13T15:54:19.571Z</when>
+<gx:coord>-1.197335 52.935821 82.0</gx:coord>
+<when>2016-01-13T15:54:20.535Z</when>
+<gx:coord>-1.197345 52.935836 83.0</gx:coord>
+<when>2016-01-13T15:54:24.573Z</when>
+<gx:coord>-1.197383 52.935903 82.0</gx:coord>
+<when>2016-01-13T15:54:25.533Z</when>
+<gx:coord>-1.19739 52.935921 82.0</gx:coord>
+<when>2016-01-13T15:54:29.554Z</when>
+<gx:coord>-1.197414 52.935998 80.0</gx:coord>
+<when>2016-01-13T15:54:30.532Z</when>
+<gx:coord>-1.197422 52.936014 80.0</gx:coord>
+<when>2016-01-13T15:54:35.560Z</when>
+<gx:coord>-1.197525 52.936071 79.0</gx:coord>
+<when>2016-01-13T15:54:36.530Z</when>
+<gx:coord>-1.197542 52.936079 79.0</gx:coord>
+<when>2016-01-13T15:54:42.557Z</when>
+<gx:coord>-1.197666 52.936123 79.0</gx:coord>
+<when>2016-01-13T15:54:43.536Z</when>
+<gx:coord>-1.197688 52.936131 79.0</gx:coord>
+<when>2016-01-13T15:54:49.574Z</when>
+<gx:coord>-1.197792 52.936192 80.0</gx:coord>
+<when>2016-01-13T15:54:50.535Z</when>
+<gx:coord>-1.197809 52.936203 81.0</gx:coord>
+<when>2016-01-13T15:54:57.565Z</when>
+<gx:coord>-1.197886 52.936276 86.0</gx:coord>
+<when>2016-01-13T15:54:58.530Z</when>
+<gx:coord>-1.197889 52.936281 86.0</gx:coord>
+<when>2016-01-13T15:55:06.537Z</when>
+<gx:coord>-1.197958 52.936358 88.0</gx:coord>
+<when>2016-01-13T15:55:07.527Z</when>
+<gx:coord>-1.197981 52.936376 88.0</gx:coord>
+<when>2016-01-13T15:55:12.558Z</when>
+<gx:coord>-1.198107 52.936402 86.0</gx:coord>
+<when>2016-01-13T15:55:13.532Z</when>
+<gx:coord>-1.198134 52.936405 86.0</gx:coord>
+<when>2016-01-13T15:55:18.560Z</when>
+<gx:coord>-1.198263 52.936434 87.0</gx:coord>
+<when>2016-01-13T15:55:19.531Z</when>
+<gx:coord>-1.198288 52.936441 88.0</gx:coord>
+<when>2016-01-13T15:55:25.560Z</when>
+<gx:coord>-1.19841 52.936472 87.0</gx:coord>
+<when>2016-01-13T15:55:26.530Z</when>
+<gx:coord>-1.198432 52.936478 87.0</gx:coord>
+<when>2016-01-13T15:55:32.563Z</when>
+<gx:coord>-1.198554 52.936519 89.0</gx:coord>
+<when>2016-01-13T15:55:33.535Z</when>
+<gx:coord>-1.198575 52.936527 89.0</gx:coord>
+<when>2016-01-13T15:55:39.562Z</when>
+<gx:coord>-1.198708 52.936563 90.0</gx:coord>
+<when>2016-01-13T15:55:40.532Z</when>
+<gx:coord>-1.198728 52.936567 91.0</gx:coord>
+<when>2016-01-13T15:55:46.562Z</when>
+<gx:coord>-1.198841 52.936608 91.0</gx:coord>
+<when>2016-01-13T15:55:47.534Z</when>
+<gx:coord>-1.19886 52.936612 91.0</gx:coord>
+<when>2016-01-13T15:55:53.560Z</when>
+<gx:coord>-1.198984 52.936641 91.0</gx:coord>
+<when>2016-01-13T15:55:54.530Z</when>
+<gx:coord>-1.199002 52.936646 91.0</gx:coord>
+<when>2016-01-13T15:56:02.552Z</when>
+<gx:coord>-1.199054 52.936723 92.0</gx:coord>
+<when>2016-01-13T15:56:03.531Z</when>
+<gx:coord>-1.199053 52.936734 92.0</gx:coord>
+<when>2016-01-13T15:56:11.573Z</when>
+<gx:coord>-1.199048 52.936817 92.0</gx:coord>
+<when>2016-01-13T15:56:12.538Z</when>
+<gx:coord>-1.19905 52.936826 91.0</gx:coord>
+<when>2016-01-13T15:56:20.570Z</when>
+<gx:coord>-1.198962 52.936897 93.0</gx:coord>
+<when>2016-01-13T15:56:21.533Z</when>
+<gx:coord>-1.198944 52.936906 93.0</gx:coord>
+<when>2016-01-13T15:56:27.562Z</when>
+<gx:coord>-1.198862 52.936969 95.0</gx:coord>
+<when>2016-01-13T15:56:28.534Z</when>
+<gx:coord>-1.198849 52.93698 96.0</gx:coord>
+<when>2016-01-13T15:56:34.562Z</when>
+<gx:coord>-1.198767 52.937042 99.0</gx:coord>
+<when>2016-01-13T15:56:35.531Z</when>
+<gx:coord>-1.19875 52.937051 100.0</gx:coord>
+<when>2016-01-13T15:56:44.658Z</when>
+<gx:coord>-1.198644 52.937109 101.0</gx:coord>
+<when>2016-01-13T15:56:45.635Z</when>
+<gx:coord>-1.198639 52.937118 101.0</gx:coord>
+<when>2016-01-13T15:56:50.680Z</when>
+<gx:coord>-1.198586 52.937188 99.0</gx:coord>
+<when>2016-01-13T15:56:51.633Z</when>
+<gx:coord>-1.198575 52.937199 100.0</gx:coord>
+<when>2016-01-13T15:56:57.673Z</when>
+<gx:coord>-1.198488 52.937259 99.0</gx:coord>
+<when>2016-01-13T15:56:58.637Z</when>
+<gx:coord>-1.19848 52.937273 99.0</gx:coord>
+<when>2016-01-13T15:57:05.660Z</when>
+<gx:coord>-1.198418 52.937351 102.0</gx:coord>
+<when>2016-01-13T15:57:06.633Z</when>
+<gx:coord>-1.198416 52.937363 102.0</gx:coord>
+<when>2016-01-13T15:57:12.686Z</when>
+<gx:coord>-1.198392 52.937451 103.0</gx:coord>
+<when>2016-01-13T15:57:13.637Z</when>
+<gx:coord>-1.198384 52.937465 103.0</gx:coord>
+<when>2016-01-13T15:57:19.659Z</when>
+<gx:coord>-1.198319 52.937543 105.0</gx:coord>
+<when>2016-01-13T15:57:20.644Z</when>
+<gx:coord>-1.198309 52.937559 104.0</gx:coord>
+<when>2016-01-13T15:57:26.905Z</when>
+<gx:coord>-1.198303 52.937639 104.0</gx:coord>
+<when>2016-01-13T15:57:27.887Z</when>
+<gx:coord>-1.198311 52.937654 103.0</gx:coord>
+<when>2016-01-13T15:57:34.929Z</when>
+<gx:coord>-1.198411 52.937716 103.0</gx:coord>
+<when>2016-01-13T15:57:35.886Z</when>
+<gx:coord>-1.198435 52.937715 103.0</gx:coord>
+<when>2016-01-13T15:57:41.923Z</when>
+<gx:coord>-1.19857 52.937721 100.0</gx:coord>
+<when>2016-01-13T15:57:42.882Z</when>
+<gx:coord>-1.198592 52.937729 100.0</gx:coord>
+<when>2016-01-13T15:57:48.919Z</when>
+<gx:coord>-1.198707 52.937782 100.0</gx:coord>
+<when>2016-01-13T15:57:49.876Z</when>
+<gx:coord>-1.198738 52.93779 100.0</gx:coord>
+<when>2016-01-13T15:57:54.927Z</when>
+<gx:coord>-1.198829 52.937845 98.0</gx:coord>
+<when>2016-01-13T15:57:55.874Z</when>
+<gx:coord>-1.198844 52.937858 98.0</gx:coord>
+<when>2016-01-13T15:58:01.919Z</when>
+<gx:coord>-1.198913 52.937931 101.0</gx:coord>
+<when>2016-01-13T15:58:02.872Z</when>
+<gx:coord>-1.198925 52.937943 101.0</gx:coord>
+<when>2016-01-13T15:58:09.898Z</when>
+<gx:coord>-1.199025 52.938008 102.0</gx:coord>
+<when>2016-01-13T15:58:10.871Z</when>
+<gx:coord>-1.199038 52.938017 101.0</gx:coord>
+<when>2016-01-13T15:58:16.903Z</when>
+<gx:coord>-1.19913 52.938077 101.0</gx:coord>
+<when>2016-01-13T15:58:17.876Z</when>
+<gx:coord>-1.199152 52.938087 101.0</gx:coord>
+<when>2016-01-13T15:58:23.905Z</when>
+<gx:coord>-1.199261 52.938135 102.0</gx:coord>
+<when>2016-01-13T15:58:24.884Z</when>
+<gx:coord>-1.19928 52.938144 102.0</gx:coord>
+<when>2016-01-13T15:58:31.905Z</when>
+<gx:coord>-1.199362 52.938214 100.0</gx:coord>
+<when>2016-01-13T15:58:32.874Z</when>
+<gx:coord>-1.199368 52.93822 101.0</gx:coord>
+<when>2016-01-13T15:58:38.918Z</when>
+<gx:coord>-1.199438 52.938298 101.0</gx:coord>
+<when>2016-01-13T15:58:39.883Z</when>
+<gx:coord>-1.199446 52.938312 102.0</gx:coord>
+<when>2016-01-13T15:58:46.923Z</when>
+<gx:coord>-1.199472 52.938395 102.0</gx:coord>
+<when>2016-01-13T15:58:47.884Z</when>
+<gx:coord>-1.199474 52.938406 103.0</gx:coord>
+<when>2016-01-13T15:58:54.917Z</when>
+<gx:coord>-1.199529 52.938484 102.0</gx:coord>
+<when>2016-01-13T15:58:55.889Z</when>
+<gx:coord>-1.199543 52.938497 102.0</gx:coord>
+<when>2016-01-13T15:59:01.908Z</when>
+<gx:coord>-1.199625 52.938566 102.0</gx:coord>
+<when>2016-01-13T15:59:02.883Z</when>
+<gx:coord>-1.19965 52.938568 102.0</gx:coord>
+<when>2016-01-13T15:59:07.908Z</when>
+<gx:coord>-1.199772 52.938548 102.0</gx:coord>
+<when>2016-01-13T15:59:08.881Z</when>
+<gx:coord>-1.199796 52.93855 102.0</gx:coord>
+<when>2016-01-13T15:59:14.907Z</when>
+<gx:coord>-1.199914 52.938589 102.0</gx:coord>
+<when>2016-01-13T15:59:15.883Z</when>
+<gx:coord>-1.199928 52.938599 101.0</gx:coord>
+<when>2016-01-13T15:59:21.909Z</when>
+<gx:coord>-1.199972 52.938673 102.0</gx:coord>
+<when>2016-01-13T15:59:22.877Z</when>
+<gx:coord>-1.199978 52.938686 102.0</gx:coord>
+<when>2016-01-13T15:59:29.913Z</when>
+<gx:coord>-1.20008 52.938746 102.0</gx:coord>
+<when>2016-01-13T15:59:30.882Z</when>
+<gx:coord>-1.200093 52.938754 102.0</gx:coord>
+<when>2016-01-13T15:59:36.897Z</when>
+<gx:coord>-1.200221 52.938784 103.0</gx:coord>
+<when>2016-01-13T15:59:37.875Z</when>
+<gx:coord>-1.200245 52.938782 102.0</gx:coord>
+<when>2016-01-13T15:59:43.905Z</when>
+<gx:coord>-1.200389 52.938782 102.0</gx:coord>
+<when>2016-01-13T15:59:44.878Z</when>
+<gx:coord>-1.20041 52.938785 102.0</gx:coord>
+<when>2016-01-13T15:59:50.929Z</when>
+<gx:coord>-1.200518 52.938837 102.0</gx:coord>
+<when>2016-01-13T15:59:51.882Z</when>
+<gx:coord>-1.200537 52.938847 102.0</gx:coord>
+<when>2016-01-13T15:59:57.925Z</when>
+<gx:coord>-1.200651 52.938896 101.0</gx:coord>
+<when>2016-01-13T15:59:58.873Z</when>
+<gx:coord>-1.200669 52.938904 101.0</gx:coord>
+<when>2016-01-13T16:00:04.931Z</when>
+<gx:coord>-1.200791 52.938938 102.0</gx:coord>
+<when>2016-01-13T16:00:05.901Z</when>
+<gx:coord>-1.200813 52.938944 102.0</gx:coord>
+<when>2016-01-13T16:00:12.903Z</when>
+<gx:coord>-1.200893 52.939009 103.0</gx:coord>
+<when>2016-01-13T16:00:13.885Z</when>
+<gx:coord>-1.200895 52.939022 103.0</gx:coord>
+<when>2016-01-13T16:00:20.918Z</when>
+<gx:coord>-1.200932 52.939102 103.0</gx:coord>
+<when>2016-01-13T16:00:21.882Z</when>
+<gx:coord>-1.20094 52.939114 103.0</gx:coord>
+<when>2016-01-13T16:00:28.910Z</when>
+<gx:coord>-1.201002 52.939185 101.0</gx:coord>
+<when>2016-01-13T16:00:29.881Z</when>
+<gx:coord>-1.201012 52.939198 100.0</gx:coord>
+<when>2016-01-13T16:00:36.907Z</when>
+<gx:coord>-1.201101 52.939269 100.0</gx:coord>
+<when>2016-01-13T16:00:37.886Z</when>
+<gx:coord>-1.201111 52.939277 100.0</gx:coord>
+<when>2016-01-13T16:00:44.920Z</when>
+<gx:coord>-1.201212 52.939333 96.0</gx:coord>
+<when>2016-01-13T16:00:45.883Z</when>
+<gx:coord>-1.201223 52.939343 96.0</gx:coord>
+<when>2016-01-13T16:00:54.912Z</when>
+<gx:coord>-1.201283 52.939416 99.0</gx:coord>
+<when>2016-01-13T16:00:55.882Z</when>
+<gx:coord>-1.201289 52.939426 99.0</gx:coord>
+<when>2016-01-13T16:01:02.908Z</when>
+<gx:coord>-1.201234 52.939503 105.0</gx:coord>
+<when>2016-01-13T16:01:03.874Z</when>
+<gx:coord>-1.201215 52.939514 105.0</gx:coord>
+<when>2016-01-13T16:01:09.919Z</when>
+<gx:coord>-1.201094 52.939555 106.0</gx:coord>
+<when>2016-01-13T16:01:10.880Z</when>
+<gx:coord>-1.201076 52.939561 107.0</gx:coord>
+<when>2016-01-13T16:01:18.893Z</when>
+<gx:coord>-1.20094 52.939547 100.0</gx:coord>
+<when>2016-01-13T16:01:19.883Z</when>
+<gx:coord>-1.200926 52.939543 99.0</gx:coord>
+<when>2016-01-13T16:01:27.919Z</when>
+<gx:coord>-1.200803 52.939498 93.0</gx:coord>
+<when>2016-01-13T16:01:28.885Z</when>
+<gx:coord>-1.200788 52.939496 93.0</gx:coord>
+<when>2016-01-13T16:01:35.913Z</when>
+<gx:coord>-1.200649 52.939513 94.0</gx:coord>
+<when>2016-01-13T16:01:36.885Z</when>
+<gx:coord>-1.200628 52.939514 95.0</gx:coord>
+<when>2016-01-13T16:01:42.912Z</when>
+<gx:coord>-1.200489 52.939515 95.0</gx:coord>
+<when>2016-01-13T16:01:43.880Z</when>
+<gx:coord>-1.200469 52.939514 95.0</gx:coord>
+<when>2016-01-13T16:01:50.911Z</when>
+<gx:coord>-1.200329 52.93954 92.0</gx:coord>
+<when>2016-01-13T16:01:51.883Z</when>
+<gx:coord>-1.200309 52.939545 92.0</gx:coord>
+<when>2016-01-13T16:01:58.907Z</when>
+<gx:coord>-1.200179 52.939584 90.0</gx:coord>
+<when>2016-01-13T16:01:59.880Z</when>
+<gx:coord>-1.200157 52.939592 90.0</gx:coord>
+<when>2016-01-13T16:02:05.917Z</when>
+<gx:coord>-1.20008 52.939653 93.0</gx:coord>
+<when>2016-01-13T16:02:06.894Z</when>
+<gx:coord>-1.200062 52.939661 95.0</gx:coord>
+<when>2016-01-13T16:02:12.919Z</when>
+<gx:coord>-1.199976 52.939722 95.0</gx:coord>
+<when>2016-01-13T16:02:13.882Z</when>
+<gx:coord>-1.199962 52.93973 95.0</gx:coord>
+<when>2016-01-13T16:02:19.917Z</when>
+<gx:coord>-1.199877 52.939799 98.0</gx:coord>
+<when>2016-01-13T16:02:20.886Z</when>
+<gx:coord>-1.199864 52.939809 98.0</gx:coord>
+<when>2016-01-13T16:02:27.911Z</when>
+<gx:coord>-1.199765 52.939865 102.0</gx:coord>
+<when>2016-01-13T16:02:28.880Z</when>
+<gx:coord>-1.199741 52.939873 102.0</gx:coord>
+<when>2016-01-13T16:02:34.920Z</when>
+<gx:coord>-1.19963 52.939929 103.0</gx:coord>
+<when>2016-01-13T16:02:35.886Z</when>
+<gx:coord>-1.199614 52.939944 102.0</gx:coord>
+<when>2016-01-13T16:02:40.911Z</when>
+<gx:coord>-1.199525 52.940004 103.0</gx:coord>
+<when>2016-01-13T16:02:41.883Z</when>
+<gx:coord>-1.199504 52.940008 102.0</gx:coord>
+<when>2016-01-13T16:02:48.928Z</when>
+<gx:coord>-1.199367 52.940017 102.0</gx:coord>
+<when>2016-01-13T16:02:49.887Z</when>
+<gx:coord>-1.199346 52.940014 102.0</gx:coord>
+<when>2016-01-13T16:02:55.914Z</when>
+<gx:coord>-1.199228 52.93999 101.0</gx:coord>
+<when>2016-01-13T16:02:56.885Z</when>
+<gx:coord>-1.199204 52.939985 102.0</gx:coord>
+<when>2016-01-13T16:03:02.914Z</when>
+<gx:coord>-1.199065 52.939972 100.0</gx:coord>
+<when>2016-01-13T16:03:03.886Z</when>
+<gx:coord>-1.199042 52.93997 100.0</gx:coord>
+<when>2016-01-13T16:03:10.907Z</when>
+<gx:coord>-1.198898 52.939965 102.0</gx:coord>
+<when>2016-01-13T16:03:11.890Z</when>
+<gx:coord>-1.198876 52.939965 102.0</gx:coord>
+<when>2016-01-13T16:03:17.911Z</when>
+<gx:coord>-1.198739 52.939973 104.0</gx:coord>
+<when>2016-01-13T16:03:18.883Z</when>
+<gx:coord>-1.198715 52.939975 104.0</gx:coord>
+<when>2016-01-13T16:03:24.931Z</when>
+<gx:coord>-1.198568 52.939986 101.0</gx:coord>
+<when>2016-01-13T16:03:25.885Z</when>
+<gx:coord>-1.198549 52.939988 102.0</gx:coord>
+<when>2016-01-13T16:03:32.911Z</when>
+<gx:coord>-1.198402 52.940001 99.0</gx:coord>
+<when>2016-01-13T16:03:33.882Z</when>
+<gx:coord>-1.198383 52.940003 99.0</gx:coord>
+<when>2016-01-13T16:03:39.917Z</when>
+<gx:coord>-1.198251 52.94003 101.0</gx:coord>
+<when>2016-01-13T16:03:40.882Z</when>
+<gx:coord>-1.198226 52.940036 100.0</gx:coord>
+<when>2016-01-13T16:03:46.912Z</when>
+<gx:coord>-1.198098 52.940078 99.0</gx:coord>
+<when>2016-01-13T16:03:47.879Z</when>
+<gx:coord>-1.198076 52.940082 99.0</gx:coord>
+<when>2016-01-13T16:03:55.923Z</when>
+<gx:coord>-1.197929 52.940085 98.0</gx:coord>
+<when>2016-01-13T16:03:56.886Z</when>
+<gx:coord>-1.197915 52.940084 97.0</gx:coord>
+<when>2016-01-13T16:04:03.922Z</when>
+<gx:coord>-1.197843 52.940017 96.0</gx:coord>
+<when>2016-01-13T16:04:04.889Z</when>
+<gx:coord>-1.197834 52.940006 96.0</gx:coord>
+<when>2016-01-13T16:04:11.920Z</when>
+<gx:coord>-1.197704 52.940049 97.0</gx:coord>
+<when>2016-01-13T16:04:12.883Z</when>
+<gx:coord>-1.197686 52.940061 98.0</gx:coord>
+<when>2016-01-13T16:04:17.913Z</when>
+<gx:coord>-1.197594 52.940114 100.0</gx:coord>
+<when>2016-01-13T16:04:18.880Z</when>
+<gx:coord>-1.197576 52.940124 99.0</gx:coord>
+<when>2016-01-13T16:04:24.911Z</when>
+<gx:coord>-1.197465 52.940181 101.0</gx:coord>
+<when>2016-01-13T16:04:25.891Z</when>
+<gx:coord>-1.197448 52.940191 101.0</gx:coord>
+<when>2016-01-13T16:04:31.905Z</when>
+<gx:coord>-1.197331 52.940245 102.0</gx:coord>
+<when>2016-01-13T16:04:32.882Z</when>
+<gx:coord>-1.197311 52.940255 102.0</gx:coord>
+<when>2016-01-13T16:04:37.902Z</when>
+<gx:coord>-1.197231 52.940314 102.0</gx:coord>
+<when>2016-01-13T16:04:38.874Z</when>
+<gx:coord>-1.197216 52.940327 102.0</gx:coord>
+<when>2016-01-13T16:04:44.893Z</when>
+<gx:coord>-1.197131 52.940397 101.0</gx:coord>
+<when>2016-01-13T16:04:45.887Z</when>
+<gx:coord>-1.197122 52.940409 100.0</gx:coord>
+<when>2016-01-13T16:04:51.916Z</when>
+<gx:coord>-1.197079 52.940485 101.0</gx:coord>
+<when>2016-01-13T16:04:52.887Z</when>
+<gx:coord>-1.197074 52.940499 101.0</gx:coord>
+<when>2016-01-13T16:04:58.910Z</when>
+<gx:coord>-1.197028 52.940576 100.0</gx:coord>
+<when>2016-01-13T16:04:59.887Z</when>
+<gx:coord>-1.19701 52.940586 100.0</gx:coord>
+<when>2016-01-13T16:05:05.916Z</when>
+<gx:coord>-1.196881 52.94063 101.0</gx:coord>
+<when>2016-01-13T16:05:06.881Z</when>
+<gx:coord>-1.196866 52.940632 102.0</gx:coord>
+<when>2016-01-13T16:05:14.909Z</when>
+<gx:coord>-1.196732 52.940666 108.0</gx:coord>
+<when>2016-01-13T16:05:15.876Z</when>
+<gx:coord>-1.196714 52.94067 108.0</gx:coord>
+<when>2016-01-13T16:05:22.908Z</when>
+<gx:coord>-1.196587 52.940705 110.0</gx:coord>
+<when>2016-01-13T16:05:23.883Z</when>
+<gx:coord>-1.196563 52.940713 111.0</gx:coord>
+<when>2016-01-13T16:05:28.912Z</when>
+<gx:coord>-1.196481 52.940775 111.0</gx:coord>
+<when>2016-01-13T16:05:29.879Z</when>
+<gx:coord>-1.196466 52.940787 111.0</gx:coord>
+<when>2016-01-13T16:05:38.911Z</when>
+<gx:coord>-1.196323 52.94078 103.0</gx:coord>
+<when>2016-01-13T16:05:39.890Z</when>
+<gx:coord>-1.196311 52.940771 101.0</gx:coord>
+<when>2016-01-13T16:05:46.909Z</when>
+<gx:coord>-1.196194 52.940722 101.0</gx:coord>
+<when>2016-01-13T16:05:47.881Z</when>
+<gx:coord>-1.196176 52.940716 101.0</gx:coord>
+<when>2016-01-13T16:05:54.908Z</when>
+<gx:coord>-1.19606 52.940685 101.0</gx:coord>
+<when>2016-01-13T16:05:55.873Z</when>
+<gx:coord>-1.196034 52.940684 102.0</gx:coord>
+<when>2016-01-13T16:06:02.899Z</when>
+<gx:coord>-1.195888 52.940668 100.0</gx:coord>
+<when>2016-01-13T16:06:03.881Z</when>
+<gx:coord>-1.195867 52.940663 100.0</gx:coord>
+<when>2016-01-13T16:06:09.918Z</when>
+<gx:coord>-1.195741 52.940622 102.0</gx:coord>
+<when>2016-01-13T16:06:10.878Z</when>
+<gx:coord>-1.195719 52.940615 102.0</gx:coord>
+<when>2016-01-13T16:06:16.905Z</when>
+<gx:coord>-1.195602 52.940574 102.0</gx:coord>
+<when>2016-01-13T16:06:17.878Z</when>
+<gx:coord>-1.195585 52.940565 103.0</gx:coord>
+<when>2016-01-13T16:06:24.903Z</when>
+<gx:coord>-1.19548 52.940502 105.0</gx:coord>
+<when>2016-01-13T16:06:25.878Z</when>
+<gx:coord>-1.195466 52.940491 105.0</gx:coord>
+<when>2016-01-13T16:06:32.911Z</when>
+<gx:coord>-1.195356 52.940433 103.0</gx:coord>
+<when>2016-01-13T16:06:33.883Z</when>
+<gx:coord>-1.195338 52.940425 104.0</gx:coord>
+<when>2016-01-13T16:06:41.917Z</when>
+<gx:coord>-1.195241 52.940369 105.0</gx:coord>
+<when>2016-01-13T16:06:42.891Z</when>
+<gx:coord>-1.19523 52.940357 105.0</gx:coord>
+<when>2016-01-13T16:06:48.912Z</when>
+<gx:coord>-1.195192 52.940279 105.0</gx:coord>
+<when>2016-01-13T16:06:49.886Z</when>
+<gx:coord>-1.195185 52.940265 105.0</gx:coord>
+<when>2016-01-13T16:06:55.907Z</when>
+<gx:coord>-1.19513 52.940183 106.0</gx:coord>
+<when>2016-01-13T16:06:56.884Z</when>
+<gx:coord>-1.195118 52.94017 105.0</gx:coord>
+<when>2016-01-13T16:07:02.910Z</when>
+<gx:coord>-1.195064 52.940089 103.0</gx:coord>
+<when>2016-01-13T16:07:03.888Z</when>
+<gx:coord>-1.19506 52.940079 102.0</gx:coord>
+<when>2016-01-13T16:07:09.913Z</when>
+<gx:coord>-1.195078 52.94 101.0</gx:coord>
+<when>2016-01-13T16:07:10.899Z</when>
+<gx:coord>-1.195085 52.939988 101.0</gx:coord>
+<when>2016-01-13T16:07:16.921Z</when>
+<gx:coord>-1.195089 52.939905 102.0</gx:coord>
+<when>2016-01-13T16:07:17.881Z</when>
+<gx:coord>-1.195083 52.939889 102.0</gx:coord>
+<when>2016-01-13T16:07:22.917Z</when>
+<gx:coord>-1.195043 52.939817 103.0</gx:coord>
+<when>2016-01-13T16:07:23.881Z</when>
+<gx:coord>-1.195034 52.939803 103.0</gx:coord>
+<when>2016-01-13T16:07:29.909Z</when>
+<gx:coord>-1.194986 52.93972 103.0</gx:coord>
+<when>2016-01-13T16:07:30.880Z</when>
+<gx:coord>-1.194976 52.939708 103.0</gx:coord>
+<when>2016-01-13T16:07:36.912Z</when>
+<gx:coord>-1.194921 52.939631 105.0</gx:coord>
+<when>2016-01-13T16:07:37.881Z</when>
+<gx:coord>-1.194907 52.93962 105.0</gx:coord>
+<when>2016-01-13T16:07:44.895Z</when>
+<gx:coord>-1.194853 52.939545 104.0</gx:coord>
+<when>2016-01-13T16:07:45.887Z</when>
+<gx:coord>-1.194858 52.939535 105.0</gx:coord>
+<when>2016-01-13T16:07:52.058Z</when>
+<gx:coord>-1.194835 52.93945 106.0</gx:coord>
+<when>2016-01-13T16:07:53.034Z</when>
+<gx:coord>-1.194815 52.93944 105.0</gx:coord>
+<when>2016-01-13T16:07:59.920Z</when>
+<gx:coord>-1.194749 52.939363 103.0</gx:coord>
+<when>2016-01-13T16:08:00.891Z</when>
+<gx:coord>-1.194736 52.939351 103.0</gx:coord>
+<when>2016-01-13T16:08:07.907Z</when>
+<gx:coord>-1.194639 52.939289 100.0</gx:coord>
+<when>2016-01-13T16:08:08.891Z</when>
+<gx:coord>-1.194626 52.939279 100.0</gx:coord>
+<when>2016-01-13T16:08:17.918Z</when>
+<gx:coord>-1.194519 52.939226 97.0</gx:coord>
+<when>2016-01-13T16:08:18.886Z</when>
+<gx:coord>-1.194501 52.939218 98.0</gx:coord>
+<when>2016-01-13T16:08:24.913Z</when>
+<gx:coord>-1.194393 52.93917 98.0</gx:coord>
+<when>2016-01-13T16:08:25.879Z</when>
+<gx:coord>-1.19438 52.939159 98.0</gx:coord>
+<when>2016-01-13T16:08:31.915Z</when>
+<gx:coord>-1.194354 52.939083 98.0</gx:coord>
+<when>2016-01-13T16:08:32.882Z</when>
+<gx:coord>-1.194359 52.939067 98.0</gx:coord>
+<when>2016-01-13T16:08:38.920Z</when>
+<gx:coord>-1.194363 52.93898 97.0</gx:coord>
+<when>2016-01-13T16:08:39.883Z</when>
+<gx:coord>-1.194355 52.938965 97.0</gx:coord>
+<when>2016-01-13T16:08:45.900Z</when>
+<gx:coord>-1.1943 52.93889 95.0</gx:coord>
+<when>2016-01-13T16:08:46.879Z</when>
+<gx:coord>-1.194287 52.938879 96.0</gx:coord>
+<when>2016-01-13T16:08:52.900Z</when>
+<gx:coord>-1.194205 52.938821 98.0</gx:coord>
+<when>2016-01-13T16:08:53.880Z</when>
+<gx:coord>-1.194187 52.938809 98.0</gx:coord>
+<when>2016-01-13T16:08:59.917Z</when>
+<gx:coord>-1.194096 52.938743 97.0</gx:coord>
+<when>2016-01-13T16:09:00.886Z</when>
+<gx:coord>-1.19408 52.938733 97.0</gx:coord>
+<when>2016-01-13T16:09:06.906Z</when>
+<gx:coord>-1.193969 52.938691 97.0</gx:coord>
+<when>2016-01-13T16:09:07.880Z</when>
+<gx:coord>-1.193949 52.938684 97.0</gx:coord>
+<when>2016-01-13T16:09:13.913Z</when>
+<gx:coord>-1.193829 52.93864 96.0</gx:coord>
+<when>2016-01-13T16:09:14.884Z</when>
+<gx:coord>-1.193809 52.938634 95.0</gx:coord>
+<when>2016-01-13T16:09:20.927Z</when>
+<gx:coord>-1.193682 52.938598 93.0</gx:coord>
+<when>2016-01-13T16:09:21.884Z</when>
+<gx:coord>-1.193662 52.938601 93.0</gx:coord>
+<when>2016-01-13T16:09:27.916Z</when>
+<gx:coord>-1.193525 52.93857 91.0</gx:coord>
+<when>2016-01-13T16:09:28.879Z</when>
+<gx:coord>-1.193507 52.938564 92.0</gx:coord>
+<when>2016-01-13T16:09:35.915Z</when>
+<gx:coord>-1.193365 52.938543 93.0</gx:coord>
+<when>2016-01-13T16:09:36.884Z</when>
+<gx:coord>-1.19334 52.938543 93.0</gx:coord>
+<when>2016-01-13T16:09:42.923Z</when>
+<gx:coord>-1.193206 52.938558 91.0</gx:coord>
+<when>2016-01-13T16:09:43.882Z</when>
+<gx:coord>-1.193183 52.938562 91.0</gx:coord>
+<when>2016-01-13T16:09:48.893Z</when>
+<gx:coord>-1.193057 52.938575 92.0</gx:coord>
+<when>2016-01-13T16:09:49.883Z</when>
+<gx:coord>-1.193033 52.938578 91.0</gx:coord>
+<when>2016-01-13T16:09:55.909Z</when>
+<gx:coord>-1.192905 52.938597 90.0</gx:coord>
+<when>2016-01-13T16:09:56.890Z</when>
+<gx:coord>-1.192886 52.938598 90.0</gx:coord>
+<when>2016-01-13T16:10:03.933Z</when>
+<gx:coord>-1.192739 52.938612 90.0</gx:coord>
+<when>2016-01-13T16:10:04.896Z</when>
+<gx:coord>-1.192718 52.938616 90.0</gx:coord>
+<when>2016-01-13T16:10:10.931Z</when>
+<gx:coord>-1.192579 52.938634 88.0</gx:coord>
+<when>2016-01-13T16:10:11.882Z</when>
+<gx:coord>-1.192555 52.938633 88.0</gx:coord>
+<when>2016-01-13T16:10:16.919Z</when>
+<gx:coord>-1.192434 52.938608 87.0</gx:coord>
+<when>2016-01-13T16:10:17.877Z</when>
+<gx:coord>-1.192409 52.938604 87.0</gx:coord>
+<when>2016-01-13T16:10:23.916Z</when>
+<gx:coord>-1.192276 52.938621 86.0</gx:coord>
+<when>2016-01-13T16:10:24.879Z</when>
+<gx:coord>-1.192257 52.93863 86.0</gx:coord>
+<when>2016-01-13T16:10:29.898Z</when>
+<gx:coord>-1.192173 52.938684 85.0</gx:coord>
+<when>2016-01-13T16:10:30.880Z</when>
+<gx:coord>-1.192155 52.938696 85.0</gx:coord>
+<when>2016-01-13T16:10:35.919Z</when>
+<gx:coord>-1.192063 52.938751 82.0</gx:coord>
+<when>2016-01-13T16:10:36.885Z</when>
+<gx:coord>-1.192044 52.938762 83.0</gx:coord>
+<when>2016-01-13T16:10:42.904Z</when>
+<gx:coord>-1.191941 52.938814 81.0</gx:coord>
+<when>2016-01-13T16:10:43.879Z</when>
+<gx:coord>-1.191923 52.938824 80.0</gx:coord>
+<when>2016-01-13T16:10:49.909Z</when>
+<gx:coord>-1.191815 52.938881 80.0</gx:coord>
+<when>2016-01-13T16:10:50.888Z</when>
+<gx:coord>-1.191796 52.938889 81.0</gx:coord>
+<when>2016-01-13T16:10:56.917Z</when>
+<gx:coord>-1.191684 52.938941 81.0</gx:coord>
+<when>2016-01-13T16:10:57.880Z</when>
+<gx:coord>-1.191666 52.93895 81.0</gx:coord>
+<when>2016-01-13T16:11:03.912Z</when>
+<gx:coord>-1.191554 52.938995 80.0</gx:coord>
+<when>2016-01-13T16:11:04.882Z</when>
+<gx:coord>-1.191536 52.939004 80.0</gx:coord>
+<when>2016-01-13T16:11:10.918Z</when>
+<gx:coord>-1.191421 52.939053 80.0</gx:coord>
+<when>2016-01-13T16:11:11.885Z</when>
+<gx:coord>-1.191405 52.939062 80.0</gx:coord>
+<when>2016-01-13T16:11:17.916Z</when>
+<gx:coord>-1.191299 52.939109 80.0</gx:coord>
+<when>2016-01-13T16:11:18.883Z</when>
+<gx:coord>-1.19128 52.939118 80.0</gx:coord>
+<when>2016-01-13T16:11:24.917Z</when>
+<gx:coord>-1.191177 52.939171 78.0</gx:coord>
+<when>2016-01-13T16:11:25.887Z</when>
+<gx:coord>-1.19116 52.939179 78.0</gx:coord>
+<when>2016-01-13T16:11:28.606Z</when>
+<gx:coord>-1.191125 52.939194 77.0</gx:coord>
+<ExtendedData>
+<SchemaData schemaUrl="#schema">
+<gx:SimpleArrayData name="speed">
+<gx:value>0.38483763</gx:value>
+<gx:value>1.2657014</gx:value>
+<gx:value>1.471224</gx:value>
+<gx:value>1.5592947</gx:value>
+<gx:value>1.3793114</gx:value>
+<gx:value>1.3500371</gx:value>
+<gx:value>1.1378049</gx:value>
+<gx:value>1.3445073</gx:value>
+<gx:value>1.4809794</gx:value>
+<gx:value>1.4108862</gx:value>
+<gx:value>1.4616429</gx:value>
+<gx:value>1.4401389</gx:value>
+<gx:value>1.4886235</gx:value>
+<gx:value>1.1007271</gx:value>
+<gx:value>1.3101525</gx:value>
+<gx:value>1.3398881</gx:value>
+<gx:value>1.5925452</gx:value>
+<gx:value>0.7424285</gx:value>
+<gx:value>0.55946404</gx:value>
+<gx:value>1.1700001</gx:value>
+<gx:value>1.4934523</gx:value>
+<gx:value>1.6360012</gx:value>
+<gx:value>1.531176</gx:value>
+<gx:value>1.6277899</gx:value>
+<gx:value>1.6970563</gx:value>
+<gx:value>1.7407182</gx:value>
+<gx:value>1.4908386</gx:value>
+<gx:value>1.5001334</gx:value>
+<gx:value>1.3405969</gx:value>
+<gx:value>1.51</gx:value>
+<gx:value>1.6104968</gx:value>
+<gx:value>1.4405555</gx:value>
+<gx:value>1.4227438</gx:value>
+<gx:value>1.54</gx:value>
+<gx:value>1.5101324</gx:value>
+<gx:value>1.4905368</gx:value>
+<gx:value>1.4701362</gx:value>
+<gx:value>1.3201516</gx:value>
+<gx:value>1.3970326</gx:value>
+<gx:value>1.5200329</gx:value>
+<gx:value>1.51</gx:value>
+<gx:value>1.7069564</gx:value>
+<gx:value>1.7691805</gx:value>
+<gx:value>1.4222517</gx:value>
+<gx:value>1.3055266</gx:value>
+<gx:value>1.6025293</gx:value>
+<gx:value>1.6137224</gx:value>
+<gx:value>1.261943</gx:value>
+<gx:value>1.3401493</gx:value>
+<gx:value>1.6949927</gx:value>
+<gx:value>1.334054</gx:value>
+<gx:value>1.370146</gx:value>
+<gx:value>1.464138</gx:value>
+<gx:value>1.5047923</gx:value>
+<gx:value>1.4022838</gx:value>
+<gx:value>1.5501289</gx:value>
+<gx:value>1.5400324</gx:value>
+<gx:value>1.484857</gx:value>
+<gx:value>1.5133076</gx:value>
+<gx:value>1.5033629</gx:value>
+<gx:value>1.47</gx:value>
+<gx:value>1.4403125</gx:value>
+<gx:value>1.4001428</gx:value>
+<gx:value>1.5200329</gx:value>
+<gx:value>1.5008332</gx:value>
+<gx:value>1.5101324</gx:value>
+<gx:value>1.4301398</gx:value>
+<gx:value>1.2831601</gx:value>
+<gx:value>1.4222517</gx:value>
+<gx:value>1.4308738</gx:value>
+<gx:value>1.490302</gx:value>
+<gx:value>1.227029</gx:value>
+<gx:value>1.3636715</gx:value>
+<gx:value>1.2738916</gx:value>
+<gx:value>1.4094325</gx:value>
+<gx:value>1.4428098</gx:value>
+<gx:value>1.3761541</gx:value>
+<gx:value>1.36</gx:value>
+<gx:value>1.4122677</gx:value>
+<gx:value>1.1795762</gx:value>
+<gx:value>1.3418272</gx:value>
+<gx:value>1.4000357</gx:value>
+<gx:value>1.41</gx:value>
+<gx:value>1.4117365</gx:value>
+<gx:value>1.5037287</gx:value>
+<gx:value>1.4203168</gx:value>
+<gx:value>1.4201409</gx:value>
+<gx:value>1.2445883</gx:value>
+<gx:value>1.2946814</gx:value>
+<gx:value>1.2703543</gx:value>
+<gx:value>1.2701575</gx:value>
+<gx:value>1.3218926</gx:value>
+<gx:value>1.2809762</gx:value>
+<gx:value>1.4408678</gx:value>
+<gx:value>1.4303145</gx:value>
+<gx:value>1.6709279</gx:value>
+<gx:value>1.6178999</gx:value>
+<gx:value>1.1311057</gx:value>
+<gx:value>1.2114867</gx:value>
+<gx:value>1.3118688</gx:value>
+<gx:value>1.3413427</gx:value>
+<gx:value>1.3500371</gx:value>
+<gx:value>1.2368509</gx:value>
+<gx:value>1.3629746</gx:value>
+<gx:value>1.3318409</gx:value>
+<gx:value>1.646147</gx:value>
+<gx:value>1.267754</gx:value>
+<gx:value>1.5011995</gx:value>
+<gx:value>1.220041</gx:value>
+<gx:value>1.6287419</gx:value>
+<gx:value>1.4516886</gx:value>
+<gx:value>1.4412841</gx:value>
+<gx:value>1.37186</gx:value>
+<gx:value>1.4016062</gx:value>
+<gx:value>1.4603082</gx:value>
+<gx:value>1.4708501</gx:value>
+<gx:value>1.46</gx:value>
+<gx:value>1.1335784</gx:value>
+<gx:value>1.2509996</gx:value>
+<gx:value>1.2900387</gx:value>
+<gx:value>1.525549</gx:value>
+<gx:value>1.4241138</gx:value>
+<gx:value>1.4303145</gx:value>
+<gx:value>1.4159802</gx:value>
+<gx:value>1.3363383</gx:value>
+<gx:value>1.3103434</gx:value>
+<gx:value>1.4701362</gx:value>
+<gx:value>1.3905754</gx:value>
+<gx:value>1.5611534</gx:value>
+<gx:value>1.2432618</gx:value>
+<gx:value>1.4205632</gx:value>
+<gx:value>1.3636715</gx:value>
+<gx:value>1.3503333</gx:value>
+<gx:value>1.5119854</gx:value>
+<gx:value>1.4017489</gx:value>
+<gx:value>1.32</gx:value>
+<gx:value>1.3661991</gx:value>
+<gx:value>1.5604166</gx:value>
+<gx:value>1.2477981</gx:value>
+<gx:value>1.5800318</gx:value>
+<gx:value>1.4516888</gx:value>
+<gx:value>1.3970326</gx:value>
+<gx:value>1.3870833</gx:value>
+<gx:value>1.4710541</gx:value>
+<gx:value>1.411276</gx:value>
+<gx:value>1.7049634</gx:value>
+<gx:value>1.4412495</gx:value>
+<gx:value>0.9704638</gx:value>
+<gx:value>1.5446682</gx:value>
+<gx:value>1.2473973</gx:value>
+<gx:value>1.255906</gx:value>
+<gx:value>1.3256319</gx:value>
+<gx:value>1.0807867</gx:value>
+<gx:value>1.1343721</gx:value>
+<gx:value>1.24952</gx:value>
+<gx:value>1.3267252</gx:value>
+<gx:value>1.2414508</gx:value>
+<gx:value>0.0</gx:value>
+<gx:value>0.75059974</gx:value>
+<gx:value>0.70837843</gx:value>
+<gx:value>1.1374533</gx:value>
+<gx:value>1.25016</gx:value>
+<gx:value>1.3605881</gx:value>
+<gx:value>0.0</gx:value>
+<gx:value>0.0</gx:value>
+<gx:value>0.88566357</gx:value>
+<gx:value>0.8409518</gx:value>
+<gx:value>1.1968291</gx:value>
+<gx:value>1.3462913</gx:value>
+<gx:value>1.2614675</gx:value>
+<gx:value>1.1360018</gx:value>
+<gx:value>1.2747549</gx:value>
+<gx:value>0.97082436</gx:value>
+<gx:value>1.1915118</gx:value>
+<gx:value>1.6638509</gx:value>
+<gx:value>1.4800338</gx:value>
+<gx:value>1.3901439</gx:value>
+<gx:value>0.6609841</gx:value>
+<gx:value>0.5866856</gx:value>
+<gx:value>1.5538983</gx:value>
+<gx:value>2.1991134</gx:value>
+<gx:value>1.1835961</gx:value>
+<gx:value>1.1182575</gx:value>
+<gx:value>1.3345412</gx:value>
+<gx:value>1.3013839</gx:value>
+<gx:value>1.2001667</gx:value>
+<gx:value>1.41</gx:value>
+<gx:value>1.4600343</gx:value>
+<gx:value>1.4538226</gx:value>
+<gx:value>1.2432618</gx:value>
+<gx:value>1.4289856</gx:value>
+<gx:value>1.2083045</gx:value>
+<gx:value>1.3106105</gx:value>
+<gx:value>1.1985407</gx:value>
+<gx:value>1.1197321</gx:value>
+<gx:value>1.2931356</gx:value>
+<gx:value>1.3064837</gx:value>
+<gx:value>0.7752419</gx:value>
+<gx:value>1.3633049</gx:value>
+<gx:value>1.3916897</gx:value>
+<gx:value>1.3831124</gx:value>
+<gx:value>1.3146101</gx:value>
+<gx:value>1.3901439</gx:value>
+<gx:value>1.5261061</gx:value>
+<gx:value>1.0868303</gx:value>
+<gx:value>1.0804167</gx:value>
+<gx:value>0.76321685</gx:value>
+<gx:value>1.3124404</gx:value>
+<gx:value>1.3946325</gx:value>
+<gx:value>1.51</gx:value>
+<gx:value>1.3800362</gx:value>
+<gx:value>1.1815244</gx:value>
+<gx:value>1.2080562</gx:value>
+<gx:value>1.4358969</gx:value>
+<gx:value>1.423025</gx:value>
+<gx:value>1.487582</gx:value>
+<gx:value>1.471224</gx:value>
+<gx:value>1.3618003</gx:value>
+<gx:value>1.547288</gx:value>
+<gx:value>1.1851159</gx:value>
+<gx:value>1.1842296</gx:value>
+<gx:value>1.4060228</gx:value>
+<gx:value>1.1253889</gx:value>
+<gx:value>1.5605127</gx:value>
+<gx:value>2.05</gx:value>
+<gx:value>1.411276</gx:value>
+<gx:value>1.5845505</gx:value>
+<gx:value>1.4017489</gx:value>
+<gx:value>1.4005713</gx:value>
+<gx:value>1.2918978</gx:value>
+<gx:value>1.31</gx:value>
+<gx:value>1.4233763</gx:value>
+<gx:value>1.5931416</gx:value>
+<gx:value>1.3055266</gx:value>
+<gx:value>1.3324039</gx:value>
+<gx:value>1.0604244</gx:value>
+<gx:value>0.6400781</gx:value>
+<gx:value>1.4748899</gx:value>
+<gx:value>1.2278436</gx:value>
+<gx:value>1.2114867</gx:value>
+<gx:value>1.3300377</gx:value>
+<gx:value>1.5502902</gx:value>
+<gx:value>1.2632102</gx:value>
+<gx:value>1.5076472</gx:value>
+<gx:value>1.5107614</gx:value>
+<gx:value>1.5383432</gx:value>
+<gx:value>1.4908386</gx:value>
+<gx:value>1.2714165</gx:value>
+<gx:value>1.3254434</gx:value>
+<gx:value>1.3164345</gx:value>
+<gx:value>1.33</gx:value>
+<gx:value>1.0616966</gx:value>
+<gx:value>1.1221853</gx:value>
+<gx:value>1.5811388</gx:value>
+<gx:value>1.4135417</gx:value>
+<gx:value>1.3831124</gx:value>
+<gx:value>1.3817742</gx:value>
+<gx:value>1.5715278</gx:value>
+<gx:value>1.4723111</gx:value>
+<gx:value>1.3354026</gx:value>
+<gx:value>1.3318409</gx:value>
+<gx:value>1.3829317</gx:value>
+<gx:value>1.4312581</gx:value>
+<gx:value>1.4708501</gx:value>
+<gx:value>1.5105296</gx:value>
+<gx:value>1.2567418</gx:value>
+<gx:value>1.3523684</gx:value>
+<gx:value>1.4008926</gx:value>
+<gx:value>1.1606895</gx:value>
+<gx:value>0.9108787</gx:value>
+<gx:value>1.058017</gx:value>
+<gx:value>0.95257545</gx:value>
+<gx:value>1.2226201</gx:value>
+<gx:value>0.7472617</gx:value>
+<gx:value>1.0171038</gx:value>
+<gx:value>1.4687409</gx:value>
+<gx:value>1.464138</gx:value>
+<gx:value>1.0728</gx:value>
+<gx:value>1.4786819</gx:value>
+<gx:value>1.2637247</gx:value>
+<gx:value>0.7951101</gx:value>
+<gx:value>1.0728</gx:value>
+<gx:value>1.0217631</gx:value>
+<gx:value>1.2014991</gx:value>
+<gx:value>1.2940247</gx:value>
+<gx:value>1.2127655</gx:value>
+<gx:value>1.1606895</gx:value>
+<gx:value>1.0373043</gx:value>
+<gx:value>1.495627</gx:value>
+<gx:value>1.3403358</gx:value>
+<gx:value>1.6003125</gx:value>
+<gx:value>1.22</gx:value>
+<gx:value>1.12272</gx:value>
+<gx:value>0.9442987</gx:value>
+<gx:value>1.0801853</gx:value>
+<gx:value>1.2340584</gx:value>
+<gx:value>1.3660527</gx:value>
+<gx:value>1.5132747</gx:value>
+<gx:value>1.3330417</gx:value>
+<gx:value>1.3354026</gx:value>
+<gx:value>1.729393</gx:value>
+<gx:value>1.0323759</gx:value>
+<gx:value>1.5446682</gx:value>
+<gx:value>1.267754</gx:value>
+<gx:value>1.132166</gx:value>
+<gx:value>1.3594484</gx:value>
+<gx:value>1.4105673</gx:value>
+<gx:value>1.5286922</gx:value>
+<gx:value>1.4424978</gx:value>
+<gx:value>1.3845216</gx:value>
+<gx:value>1.23</gx:value>
+<gx:value>1.41</gx:value>
+<gx:value>1.396066</gx:value>
+<gx:value>0.81437093</gx:value>
+<gx:value>1.0965856</gx:value>
+<gx:value>1.17047</gx:value>
+<gx:value>1.1520851</gx:value>
+<gx:value>1.2946814</gx:value>
+<gx:value>1.2233151</gx:value>
+<gx:value>1.498566</gx:value>
+<gx:value>1.1421471</gx:value>
+<gx:value>0.98898935</gx:value>
+<gx:value>1.0577334</gx:value>
+<gx:value>1.3106105</gx:value>
+<gx:value>1.0800463</gx:value>
+<gx:value>1.3805071</gx:value>
+<gx:value>1.5119854</gx:value>
+<gx:value>1.2548306</gx:value>
+<gx:value>1.595243</gx:value>
+<gx:value>1.285496</gx:value>
+<gx:value>1.4080127</gx:value>
+<gx:value>1.5570806</gx:value>
+<gx:value>1.4203168</gx:value>
+<gx:value>1.4812157</gx:value>
+<gx:value>1.531176</gx:value>
+<gx:value>1.411276</gx:value>
+<gx:value>1.2946814</gx:value>
+<gx:value>1.1100451</gx:value>
+<gx:value>1.3296616</gx:value>
+<gx:value>1.2603571</gx:value>
+<gx:value>1.6252077</gx:value>
+<gx:value>1.3146101</gx:value>
+<gx:value>0.9433981</gx:value>
+<gx:value>1.1016352</gx:value>
+<gx:value>1.1007271</gx:value>
+<gx:value>1.565535</gx:value>
+<gx:value>1.501366</gx:value>
+<gx:value>1.5223665</gx:value>
+<gx:value>1.39</gx:value>
+<gx:value>1.5719097</gx:value>
+<gx:value>1.4577379</gx:value>
+<gx:value>1.520296</gx:value>
+<gx:value>1.4900336</gx:value>
+<gx:value>1.8242807</gx:value>
+<gx:value>1.4809794</gx:value>
+<gx:value>1.3717872</gx:value>
+<gx:value>1.5184532</gx:value>
+<gx:value>1.603808</gx:value>
+<gx:value>1.5211837</gx:value>
+<gx:value>1.4400347</gx:value>
+<gx:value>1.5101324</gx:value>
+<gx:value>1.4122677</gx:value>
+<gx:value>1.39</gx:value>
+<gx:value>1.3553228</gx:value>
+<gx:value>1.3805071</gx:value>
+<gx:value>1.4538226</gx:value>
+<gx:value>1.25036</gx:value>
+<gx:value>1.611521</gx:value>
+<gx:value>1.3004999</gx:value>
+<gx:value>1.2539936</gx:value>
+<gx:value>1.5725775</gx:value>
+<gx:value>1.1596551</gx:value>
+<gx:value>1.3159027</gx:value>
+<gx:value>1.0785638</gx:value>
+<gx:value>1.2940247</gx:value>
+<gx:value>1.7561606</gx:value>
+<gx:value>1.6000313</gx:value>
+<gx:value>1.5996562</gx:value>
+<gx:value>1.5705096</gx:value>
+<gx:value>1.5426276</gx:value>
+<gx:value>1.4425671</gx:value>
+<gx:value>1.3106105</gx:value>
+<gx:value>1.374809</gx:value>
+<gx:value>0.9798469</gx:value>
+<gx:value>1.3970326</gx:value>
+<gx:value>1.443087</gx:value>
+<gx:value>1.6015306</gx:value>
+<gx:value>1.6104658</gx:value>
+<gx:value>1.5026976</gx:value>
+<gx:value>1.368247</gx:value>
+<gx:value>1.3</gx:value>
+<gx:value>1.3313527</gx:value>
+<gx:value>1.3713132</gx:value>
+<gx:value>1.4703062</gx:value>
+<gx:value>1.411276</gx:value>
+<gx:value>1.3509257</gx:value>
+<gx:value>1.7604545</gx:value>
+<gx:value>1.4764823</gx:value>
+<gx:value>1.6164467</gx:value>
+<gx:value>1.4965627</gx:value>
+<gx:value>1.4600343</gx:value>
+<gx:value>1.4400694</gx:value>
+<gx:value>1.9416488</gx:value>
+<gx:value>1.4143903</gx:value>
+<gx:value>1.3884163</gx:value>
+<gx:value>1.4909058</gx:value>
+<gx:value>1.4441954</gx:value>
+<gx:value>1.4317821</gx:value>
+<gx:value>1.3875518</gx:value>
+<gx:value>1.1700428</gx:value>
+<gx:value>1.5615697</gx:value>
+<gx:value>1.6493938</gx:value>
+<gx:value>1.3509257</gx:value>
+<gx:value>1.6636406</gx:value>
+<gx:value>1.5332645</gx:value>
+<gx:value>1.6395731</gx:value>
+<gx:value>1.7129215</gx:value>
+<gx:value>1.7229046</gx:value>
+<gx:value>1.7509426</gx:value>
+<gx:value>1.3055266</gx:value>
+<gx:value>1.545639</gx:value>
+<gx:value>1.0568348</gx:value>
+<gx:value>1.7029386</gx:value>
+<gx:value>1.7366635</gx:value>
+<gx:value>1.4708501</gx:value>
+<gx:value>1.6918925</gx:value>
+<gx:value>1.5632018</gx:value>
+<gx:value>1.4150971</gx:value>
+<gx:value>1.4317123</gx:value>
+<gx:value>1.4916434</gx:value>
+<gx:value>1.5411683</gx:value>
+<gx:value>1.3861096</gx:value>
+<gx:value>1.5605127</gx:value>
+<gx:value>1.3501482</gx:value>
+<gx:value>1.4921461</gx:value>
+<gx:value>1.5401299</gx:value>
+<gx:value>1.3324039</gx:value>
+<gx:value>1.5582361</gx:value>
+<gx:value>1.4385061</gx:value>
+<gx:value>1.4150971</gx:value>
+<gx:value>1.4616772</gx:value>
+<gx:value>1.490302</gx:value>
+<gx:value>1.3401493</gx:value>
+<gx:value>1.521611</gx:value>
+<gx:value>1.5515798</gx:value>
+<gx:value>1.3875518</gx:value>
+<gx:value>1.4512409</gx:value>
+<gx:value>1.3662357</gx:value>
+</gx:SimpleArrayData>
+<gx:SimpleArrayData name="bearing">
+<gx:value>180.0</gx:value>
+<gx:value>154.0</gx:value>
+<gx:value>133.0</gx:value>
+<gx:value>149.0</gx:value>
+<gx:value>149.0</gx:value>
+<gx:value>140.0</gx:value>
+<gx:value>140.0</gx:value>
+<gx:value>142.0</gx:value>
+<gx:value>136.0</gx:value>
+<gx:value>139.0</gx:value>
+<gx:value>148.0</gx:value>
+<gx:value>137.0</gx:value>
+<gx:value>137.0</gx:value>
+<gx:value>119.0</gx:value>
+<gx:value>119.0</gx:value>
+<gx:value>143.0</gx:value>
+<gx:value>140.0</gx:value>
+<gx:value>154.0</gx:value>
+<gx:value>154.0</gx:value>
+<gx:value>135.0</gx:value>
+<gx:value>124.0</gx:value>
+<gx:value>141.0</gx:value>
+<gx:value>140.0</gx:value>
+<gx:value>127.0</gx:value>
+<gx:value>128.0</gx:value>
+<gx:value>158.0</gx:value>
+<gx:value>152.0</gx:value>
+<gx:value>154.0</gx:value>
+<gx:value>154.0</gx:value>
+<gx:value>161.0</gx:value>
+<gx:value>161.0</gx:value>
+<gx:value>160.0</gx:value>
+<gx:value>166.0</gx:value>
+<gx:value>179.0</gx:value>
+<gx:value>179.0</gx:value>
+<gx:value>182.0</gx:value>
+<gx:value>182.0</gx:value>
+<gx:value>189.0</gx:value>
+<gx:value>192.0</gx:value>
+<gx:value>202.0</gx:value>
+<gx:value>202.0</gx:value>
+<gx:value>217.0</gx:value>
+<gx:value>201.0</gx:value>
+<gx:value>225.0</gx:value>
+<gx:value>226.0</gx:value>
+<gx:value>227.0</gx:value>
+<gx:value>231.0</gx:value>
+<gx:value>254.0</gx:value>
+<gx:value>254.0</gx:value>
+<gx:value>247.0</gx:value>
+<gx:value>255.0</gx:value>
+<gx:value>260.0</gx:value>
+<gx:value>258.0</gx:value>
+<gx:value>263.0</gx:value>
+<gx:value>265.0</gx:value>
+<gx:value>259.0</gx:value>
+<gx:value>264.0</gx:value>
+<gx:value>253.0</gx:value>
+<gx:value>253.0</gx:value>
+<gx:value>249.0</gx:value>
+<gx:value>246.0</gx:value>
+<gx:value>250.0</gx:value>
+<gx:value>251.0</gx:value>
+<gx:value>237.0</gx:value>
+<gx:value>242.0</gx:value>
+<gx:value>243.0</gx:value>
+<gx:value>243.0</gx:value>
+<gx:value>244.0</gx:value>
+<gx:value>244.0</gx:value>
+<gx:value>245.0</gx:value>
+<gx:value>244.0</gx:value>
+<gx:value>243.0</gx:value>
+<gx:value>243.0</gx:value>
+<gx:value>233.0</gx:value>
+<gx:value>234.0</gx:value>
+<gx:value>254.0</gx:value>
+<gx:value>254.0</gx:value>
+<gx:value>257.0</gx:value>
+<gx:value>257.0</gx:value>
+<gx:value>269.0</gx:value>
+<gx:value>264.0</gx:value>
+<gx:value>250.0</gx:value>
+<gx:value>250.0</gx:value>
+<gx:value>252.0</gx:value>
+<gx:value>252.0</gx:value>
+<gx:value>250.0</gx:value>
+<gx:value>250.0</gx:value>
+<gx:value>246.0</gx:value>
+<gx:value>246.0</gx:value>
+<gx:value>251.0</gx:value>
+<gx:value>247.0</gx:value>
+<gx:value>279.0</gx:value>
+<gx:value>281.0</gx:value>
+<gx:value>246.0</gx:value>
+<gx:value>246.0</gx:value>
+<gx:value>229.0</gx:value>
+<gx:value>230.0</gx:value>
+<gx:value>233.0</gx:value>
+<gx:value>233.0</gx:value>
+<gx:value>139.0</gx:value>
+<gx:value>135.0</gx:value>
+<gx:value>123.0</gx:value>
+<gx:value>123.0</gx:value>
+<gx:value>133.0</gx:value>
+<gx:value>133.0</gx:value>
+<gx:value>168.0</gx:value>
+<gx:value>190.0</gx:value>
+<gx:value>209.0</gx:value>
+<gx:value>208.0</gx:value>
+<gx:value>226.0</gx:value>
+<gx:value>222.0</gx:value>
+<gx:value>226.0</gx:value>
+<gx:value>226.0</gx:value>
+<gx:value>227.0</gx:value>
+<gx:value>227.0</gx:value>
+<gx:value>222.0</gx:value>
+<gx:value>223.0</gx:value>
+<gx:value>236.0</gx:value>
+<gx:value>237.0</gx:value>
+<gx:value>237.0</gx:value>
+<gx:value>237.0</gx:value>
+<gx:value>233.0</gx:value>
+<gx:value>233.0</gx:value>
+<gx:value>232.0</gx:value>
+<gx:value>232.0</gx:value>
+<gx:value>222.0</gx:value>
+<gx:value>226.0</gx:value>
+<gx:value>233.0</gx:value>
+<gx:value>240.0</gx:value>
+<gx:value>218.0</gx:value>
+<gx:value>237.0</gx:value>
+<gx:value>232.0</gx:value>
+<gx:value>241.0</gx:value>
+<gx:value>252.0</gx:value>
+<gx:value>252.0</gx:value>
+<gx:value>267.0</gx:value>
+<gx:value>267.0</gx:value>
+<gx:value>261.0</gx:value>
+<gx:value>262.0</gx:value>
+<gx:value>270.0</gx:value>
+<gx:value>256.0</gx:value>
+<gx:value>259.0</gx:value>
+<gx:value>255.0</gx:value>
+<gx:value>265.0</gx:value>
+<gx:value>267.0</gx:value>
+<gx:value>280.0</gx:value>
+<gx:value>279.0</gx:value>
+<gx:value>278.0</gx:value>
+<gx:value>279.0</gx:value>
+<gx:value>280.0</gx:value>
+<gx:value>277.0</gx:value>
+<gx:value>285.0</gx:value>
+<gx:value>285.0</gx:value>
+<gx:value>296.0</gx:value>
+<gx:value>296.0</gx:value>
+<gx:value>321.0</gx:value>
+<gx:value>320.0</gx:value>
+<gx:value></gx:value>
+<gx:value>345.0</gx:value>
+<gx:value>14.0</gx:value>
+<gx:value>19.0</gx:value>
+<gx:value>323.0</gx:value>
+<gx:value>323.0</gx:value>
+<gx:value></gx:value>
+<gx:value></gx:value>
+<gx:value>17.0</gx:value>
+<gx:value>8.0</gx:value>
+<gx:value>5.0</gx:value>
+<gx:value>5.0</gx:value>
+<gx:value>358.0</gx:value>
+<gx:value>357.0</gx:value>
+<gx:value>305.0</gx:value>
+<gx:value>297.0</gx:value>
+<gx:value>301.0</gx:value>
+<gx:value>300.0</gx:value>
+<gx:value>314.0</gx:value>
+<gx:value>320.0</gx:value>
+<gx:value>324.0</gx:value>
+<gx:value>324.0</gx:value>
+<gx:value>322.0</gx:value>
+<gx:value>323.0</gx:value>
+<gx:value>286.0</gx:value>
+<gx:value>282.0</gx:value>
+<gx:value>291.0</gx:value>
+<gx:value>298.0</gx:value>
+<gx:value>295.0</gx:value>
+<gx:value>295.0</gx:value>
+<gx:value>294.0</gx:value>
+<gx:value>294.0</gx:value>
+<gx:value>285.0</gx:value>
+<gx:value>289.0</gx:value>
+<gx:value>267.0</gx:value>
+<gx:value>269.0</gx:value>
+<gx:value>284.0</gx:value>
+<gx:value>284.0</gx:value>
+<gx:value>343.0</gx:value>
+<gx:value>347.0</gx:value>
+<gx:value>341.0</gx:value>
+<gx:value>348.0</gx:value>
+<gx:value>35.0</gx:value>
+<gx:value>40.0</gx:value>
+<gx:value>36.0</gx:value>
+<gx:value>36.0</gx:value>
+<gx:value>40.0</gx:value>
+<gx:value>46.0</gx:value>
+<gx:value>50.0</gx:value>
+<gx:value>50.0</gx:value>
+<gx:value>49.0</gx:value>
+<gx:value>48.0</gx:value>
+<gx:value>31.0</gx:value>
+<gx:value>24.0</gx:value>
+<gx:value>12.0</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>13.0</gx:value>
+<gx:value>15.0</gx:value>
+<gx:value>21.0</gx:value>
+<gx:value>21.0</gx:value>
+<gx:value>11.0</gx:value>
+<gx:value>342.0</gx:value>
+<gx:value>291.0</gx:value>
+<gx:value>272.0</gx:value>
+<gx:value>300.0</gx:value>
+<gx:value>283.0</gx:value>
+<gx:value>296.0</gx:value>
+<gx:value>287.0</gx:value>
+<gx:value>303.0</gx:value>
+<gx:value>320.0</gx:value>
+<gx:value>316.0</gx:value>
+<gx:value>316.0</gx:value>
+<gx:value>318.0</gx:value>
+<gx:value>318.0</gx:value>
+<gx:value>301.0</gx:value>
+<gx:value>301.0</gx:value>
+<gx:value>309.0</gx:value>
+<gx:value>309.0</gx:value>
+<gx:value>322.0</gx:value>
+<gx:value>322.0</gx:value>
+<gx:value>329.0</gx:value>
+<gx:value>330.0</gx:value>
+<gx:value>353.0</gx:value>
+<gx:value>353.0</gx:value>
+<gx:value>330.0</gx:value>
+<gx:value>330.0</gx:value>
+<gx:value>273.0</gx:value>
+<gx:value>250.0</gx:value>
+<gx:value>265.0</gx:value>
+<gx:value>278.0</gx:value>
+<gx:value>306.0</gx:value>
+<gx:value>306.0</gx:value>
+<gx:value>341.0</gx:value>
+<gx:value>341.0</gx:value>
+<gx:value>317.0</gx:value>
+<gx:value>317.0</gx:value>
+<gx:value>268.0</gx:value>
+<gx:value>261.0</gx:value>
+<gx:value>274.0</gx:value>
+<gx:value>274.0</gx:value>
+<gx:value>299.0</gx:value>
+<gx:value>307.0</gx:value>
+<gx:value>298.0</gx:value>
+<gx:value>298.0</gx:value>
+<gx:value>289.0</gx:value>
+<gx:value>290.0</gx:value>
+<gx:value>346.0</gx:value>
+<gx:value>346.0</gx:value>
+<gx:value>331.0</gx:value>
+<gx:value>331.0</gx:value>
+<gx:value>333.0</gx:value>
+<gx:value>308.0</gx:value>
+<gx:value>322.0</gx:value>
+<gx:value>322.0</gx:value>
+<gx:value>304.0</gx:value>
+<gx:value>304.0</gx:value>
+<gx:value>342.0</gx:value>
+<gx:value>342.0</gx:value>
+<gx:value>38.0</gx:value>
+<gx:value>38.0</gx:value>
+<gx:value>40.0</gx:value>
+<gx:value>78.0</gx:value>
+<gx:value>114.0</gx:value>
+<gx:value>113.0</gx:value>
+<gx:value>114.0</gx:value>
+<gx:value>82.0</gx:value>
+<gx:value>82.0</gx:value>
+<gx:value>82.0</gx:value>
+<gx:value>95.0</gx:value>
+<gx:value>95.0</gx:value>
+<gx:value>65.0</gx:value>
+<gx:value>65.0</gx:value>
+<gx:value>60.0</gx:value>
+<gx:value>60.0</gx:value>
+<gx:value>26.0</gx:value>
+<gx:value>27.0</gx:value>
+<gx:value>32.0</gx:value>
+<gx:value>33.0</gx:value>
+<gx:value>40.0</gx:value>
+<gx:value>40.0</gx:value>
+<gx:value>39.0</gx:value>
+<gx:value>40.0</gx:value>
+<gx:value>36.0</gx:value>
+<gx:value>30.0</gx:value>
+<gx:value>27.0</gx:value>
+<gx:value>61.0</gx:value>
+<gx:value>78.0</gx:value>
+<gx:value>78.0</gx:value>
+<gx:value>96.0</gx:value>
+<gx:value>96.0</gx:value>
+<gx:value>96.0</gx:value>
+<gx:value>96.0</gx:value>
+<gx:value>86.0</gx:value>
+<gx:value>86.0</gx:value>
+<gx:value>94.0</gx:value>
+<gx:value>94.0</gx:value>
+<gx:value>81.0</gx:value>
+<gx:value>77.0</gx:value>
+<gx:value>86.0</gx:value>
+<gx:value>86.0</gx:value>
+<gx:value>68.0</gx:value>
+<gx:value>67.0</gx:value>
+<gx:value>56.0</gx:value>
+<gx:value>55.0</gx:value>
+<gx:value>79.0</gx:value>
+<gx:value>79.0</gx:value>
+<gx:value>140.0</gx:value>
+<gx:value>140.0</gx:value>
+<gx:value>53.0</gx:value>
+<gx:value>42.0</gx:value>
+<gx:value>39.0</gx:value>
+<gx:value>53.0</gx:value>
+<gx:value>39.0</gx:value>
+<gx:value>39.0</gx:value>
+<gx:value>45.0</gx:value>
+<gx:value>45.0</gx:value>
+<gx:value>37.0</gx:value>
+<gx:value>37.0</gx:value>
+<gx:value>14.0</gx:value>
+<gx:value>14.0</gx:value>
+<gx:value>16.0</gx:value>
+<gx:value>21.0</gx:value>
+<gx:value>10.0</gx:value>
+<gx:value>10.0</gx:value>
+<gx:value>44.0</gx:value>
+<gx:value>44.0</gx:value>
+<gx:value>68.0</gx:value>
+<gx:value>68.0</gx:value>
+<gx:value>56.0</gx:value>
+<gx:value>56.0</gx:value>
+<gx:value>31.0</gx:value>
+<gx:value>32.0</gx:value>
+<gx:value>143.0</gx:value>
+<gx:value>143.0</gx:value>
+<gx:value>120.0</gx:value>
+<gx:value>121.0</gx:value>
+<gx:value>120.0</gx:value>
+<gx:value>103.0</gx:value>
+<gx:value>115.0</gx:value>
+<gx:value>120.0</gx:value>
+<gx:value>123.0</gx:value>
+<gx:value>111.0</gx:value>
+<gx:value>125.0</gx:value>
+<gx:value>125.0</gx:value>
+<gx:value>133.0</gx:value>
+<gx:value>134.0</gx:value>
+<gx:value>126.0</gx:value>
+<gx:value>120.0</gx:value>
+<gx:value>123.0</gx:value>
+<gx:value>123.0</gx:value>
+<gx:value>161.0</gx:value>
+<gx:value>160.0</gx:value>
+<gx:value>159.0</gx:value>
+<gx:value>148.0</gx:value>
+<gx:value>165.0</gx:value>
+<gx:value>165.0</gx:value>
+<gx:value>207.0</gx:value>
+<gx:value>207.0</gx:value>
+<gx:value>172.0</gx:value>
+<gx:value>158.0</gx:value>
+<gx:value>152.0</gx:value>
+<gx:value>152.0</gx:value>
+<gx:value>158.0</gx:value>
+<gx:value>153.0</gx:value>
+<gx:value>148.0</gx:value>
+<gx:value>148.0</gx:value>
+<gx:value>166.0</gx:value>
+<gx:value>211.0</gx:value>
+<gx:value>137.0</gx:value>
+<gx:value>134.0</gx:value>
+<gx:value>144.0</gx:value>
+<gx:value>143.0</gx:value>
+<gx:value>152.0</gx:value>
+<gx:value>152.0</gx:value>
+<gx:value>135.0</gx:value>
+<gx:value>130.0</gx:value>
+<gx:value>139.0</gx:value>
+<gx:value>140.0</gx:value>
+<gx:value>159.0</gx:value>
+<gx:value>184.0</gx:value>
+<gx:value>158.0</gx:value>
+<gx:value>166.0</gx:value>
+<gx:value>152.0</gx:value>
+<gx:value>149.0</gx:value>
+<gx:value>150.0</gx:value>
+<gx:value>150.0</gx:value>
+<gx:value>150.0</gx:value>
+<gx:value>150.0</gx:value>
+<gx:value>127.0</gx:value>
+<gx:value>127.0</gx:value>
+<gx:value>127.0</gx:value>
+<gx:value>115.0</gx:value>
+<gx:value>106.0</gx:value>
+<gx:value>106.0</gx:value>
+<gx:value>108.0</gx:value>
+<gx:value>108.0</gx:value>
+<gx:value>92.0</gx:value>
+<gx:value>92.0</gx:value>
+<gx:value>72.0</gx:value>
+<gx:value>76.0</gx:value>
+<gx:value>75.0</gx:value>
+<gx:value>76.0</gx:value>
+<gx:value>81.0</gx:value>
+<gx:value>90.0</gx:value>
+<gx:value>82.0</gx:value>
+<gx:value>71.0</gx:value>
+<gx:value>85.0</gx:value>
+<gx:value>100.0</gx:value>
+<gx:value>105.0</gx:value>
+<gx:value>105.0</gx:value>
+<gx:value>68.0</gx:value>
+<gx:value>62.0</gx:value>
+<gx:value>50.0</gx:value>
+<gx:value>50.0</gx:value>
+<gx:value>54.0</gx:value>
+<gx:value>51.0</gx:value>
+<gx:value>55.0</gx:value>
+<gx:value>52.0</gx:value>
+<gx:value>53.0</gx:value>
+<gx:value>53.0</gx:value>
+<gx:value>47.0</gx:value>
+<gx:value>48.0</gx:value>
+<gx:value>54.0</gx:value>
+<gx:value>57.0</gx:value>
+<gx:value>50.0</gx:value>
+<gx:value>50.0</gx:value>
+<gx:value>51.0</gx:value>
+<gx:value>51.0</gx:value>
+<gx:value>51.0</gx:value>
+<gx:value>53.0</gx:value>
+<gx:value>62.0</gx:value>
+</gx:SimpleArrayData>
+<gx:SimpleArrayData name="accuracy">
+<gx:value>11.0</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>5.0</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>5.0</gx:value>
+<gx:value>5.0</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>5.0</gx:value>
+<gx:value>5.0</gx:value>
+<gx:value>5.0</gx:value>
+<gx:value>5.0</gx:value>
+<gx:value>5.0</gx:value>
+<gx:value>5.0</gx:value>
+<gx:value>5.0</gx:value>
+<gx:value>9.0</gx:value>
+<gx:value>9.0</gx:value>
+<gx:value>10.0</gx:value>
+<gx:value>10.0</gx:value>
+<gx:value>10.0</gx:value>
+<gx:value>10.0</gx:value>
+<gx:value>9.0</gx:value>
+<gx:value>9.0</gx:value>
+<gx:value>9.0</gx:value>
+<gx:value>9.0</gx:value>
+<gx:value>9.0</gx:value>
+<gx:value>9.0</gx:value>
+<gx:value>9.0</gx:value>
+<gx:value>9.0</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>5.0</gx:value>
+<gx:value>5.0</gx:value>
+<gx:value>5.0</gx:value>
+<gx:value>5.0</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>7.0</gx:value>
+<gx:value>7.0</gx:value>
+<gx:value>5.0</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>5.0</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>4.0</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+<gx:value>3.9</gx:value>
+<gx:value>3.0</gx:value>
+</gx:SimpleArrayData>
+</SchemaData>
+</ExtendedData>
+</gx:Track>
+</gx:MultiTrack>
+</Placemark>
+<Placemark>
+<name><![CDATA[East Dr (End)]]></name>
+<description><![CDATA[Created by Google My Tracks on Android
+
+Name: East Dr
+Activity type: -
+Description: -
+Total distance: 2.42 km (1.5 mi)
+Total time: 27:45
+Moving time: 27:23
+Average speed: 5.22 km/h (3.2 mi/h)
+Average moving speed: 5.29 km/h (3.3 mi/h)
+Max speed: 7.92 km/h (4.9 mi/h)
+Average pace: 11:29 min/km (18:30 min/mi)
+Average moving pace: 11:20 min/km (18:15 min/mi)
+Fastest pace: 7:35 min/km (12:12 min/mi)
+Max elevation: 104 m (342 ft)
+Min elevation: 68 m (222 ft)
+Elevation gain: 50 m (165 ft)
+Max grade: 10 %
+Min grade: -18 %
+Recorded: 13/01/2016 15:43
+]]></description>
+<TimeStamp><when>2016-01-13T16:11:28.606Z</when></TimeStamp>
+<styleUrl>#end</styleUrl>
+<Point>
+<coordinates>-1.191125,52.939194,77.0</coordinates>
+</Point>
+</Placemark>
+</Document>
+</kml>
